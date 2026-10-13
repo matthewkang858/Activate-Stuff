@@ -101,9 +101,14 @@ asks for one festival, are cached for 10 minutes and are rate-limited per visito
 
 ## Data
 
-- [`data/festivals.json`](data/festivals.json): one entry per festival with ISO dates per edition, genres,
-  official site, cheapest GA price, camping, nearby airports (closest first) and source links. Edit this
-  file to add or update festivals; `npm test` validates it.
+- [`data/festivals.json`](data/festivals.json): one entry per festival with ISO dates per edition, venue
+  coordinates, genres, official site, cheapest GA price, camping, nearby airports (closest first) and source
+  links. Edit this file to add or update festivals; `npm test` validates it, including that the venue is
+  within 150 miles of its first airport.
+- Venue coordinates were placed independently by two methods (the town's [GeoNames](https://www.geonames.org/)
+  centroid and a venue lookup) and any that disagreed by more than 12 miles, or had no town match, were
+  resolved by a third check. Expect them to be within about a mile of the venue, which is plenty for a hotel
+  search.
 - [`data/airports.json`](data/airports.json): US airports with scheduled airline service, built from
   [OurAirports](https://ourairports.com/data/) (public domain) by `npm run build:airports -- <airports.json>`.
 

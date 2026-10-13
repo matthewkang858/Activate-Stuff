@@ -3,6 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { loadData, STATE_NAMES } from '../src/data.js';
 import { isISODate } from '../src/dates.js';
+import { distanceMiles } from '../src/geo.js';
 
 const GENRES = new Set([
   'rock', 'alternative', 'indie', 'pop', 'hip-hop', 'rnb', 'electronic', 'country', 'folk', 'bluegrass',
@@ -28,6 +29,10 @@ for (const f of festivals) {
     assert.ok(f.airports.length > 0, 'at least one known airport');
     assert.ok(f.airports.every((code) => airportsByCode.has(code)));
     if (f.website) assert.match(f.website, /^https:\/\//);
+    // Venue coordinates drive the hotel search; a typo would search the wrong town.
+    assert.ok(Number.isFinite(f.lat) && Number.isFinite(f.lon), 'coordinates');
+    const miles = distanceMiles(f, airportsByCode.get(f.airports[0]));
+    assert.ok(miles < 150, `venue is ${Math.round(miles)} miles from ${f.airports[0]}`);
     if (f.ticket) assert.ok(Number.isFinite(f.ticket.gaFrom) && f.ticket.gaFrom >= 0 && f.ticket.note, 'ticket price and note');
 
     assert.ok(f.editions.length > 0, 'has dates');

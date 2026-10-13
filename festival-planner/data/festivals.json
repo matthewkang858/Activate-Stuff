@@ -5,6 +5,8 @@
     "city": "Columbia",
     "state": "MD",
     "venue": "Merriweather Post Pavilion",
+    "lat": 39.2094,
+    "lon": -76.8618,
     "genres": [
       "indie",
       "pop",
@@ -41,6 +43,8 @@
     "city": "Austin",
     "state": "TX",
     "venue": "Zilker Park",
+    "lat": 30.267,
+    "lon": -97.773,
     "genres": [
       "eclectic",
       "pop",
@@ -87,6 +91,8 @@
     "city": "Redondo Beach",
     "state": "CA",
     "venue": "Seaside Lagoon",
+    "lat": 33.8445,
+    "lon": -118.395,
     "genres": [
       "rock",
       "alternative",
@@ -127,6 +133,8 @@
     "city": "San Bernardino",
     "state": "CA",
     "venue": "NOS Events Center",
+    "lat": 34.0895,
+    "lon": -117.2905,
     "genres": [
       "electronic"
     ],
@@ -171,6 +179,8 @@
     "city": "Manchester",
     "state": "TN",
     "venue": "Great Stage Park",
+    "lat": 35.478,
+    "lon": -86.054,
     "genres": [
       "eclectic",
       "rock",
@@ -212,6 +222,8 @@
     "city": "Boston",
     "state": "MA",
     "venue": "Harvard Athletic Complex (Allston)",
+    "lat": 42.3665,
+    "lon": -71.1255,
     "genres": [
       "rock",
       "alternative",
@@ -249,6 +261,8 @@
     "city": "Napa",
     "state": "CA",
     "venue": "Napa Valley Expo",
+    "lat": 38.2965,
+    "lon": -122.2778,
     "genres": [
       "rock",
       "pop",
@@ -289,6 +303,8 @@
     "city": "Seattle",
     "state": "WA",
     "venue": "Seattle Center",
+    "lat": 47.6215,
+    "lon": -122.3515,
     "genres": [
       "indie",
       "rock",
@@ -329,6 +345,8 @@
     "city": "Los Angeles",
     "state": "CA",
     "venue": "Dodger Stadium",
+    "lat": 34.0739,
+    "lon": -118.24,
     "genres": [
       "hip-hop",
       "rnb",
@@ -369,6 +387,8 @@
     "city": "Myrtle Beach",
     "state": "SC",
     "venue": "Burroughs & Chapin Pavilion Place",
+    "lat": 33.6905,
+    "lon": -78.881,
     "genres": [
       "country"
     ],
@@ -403,6 +423,8 @@
     "city": "Nashville",
     "state": "TN",
     "venue": "Nissan Stadium (nightly concerts) and downtown Nashville stages",
+    "lat": 36.163,
+    "lon": -86.775,
     "genres": [
       "country"
     ],
@@ -442,6 +464,8 @@
     "city": "Indio",
     "state": "CA",
     "venue": "Empire Polo Club",
+    "lat": 33.6803,
+    "lon": -116.2378,
     "genres": [
       "eclectic",
       "pop",
@@ -505,6 +529,8 @@
     "city": "Florence",
     "state": "AZ",
     "venue": "Canyon Moon Ranch",
+    "lat": 33.079,
+    "lon": -111.344,
     "genres": [
       "country"
     ],
@@ -544,6 +570,8 @@
     "city": "Twin Lakes",
     "state": "WI",
     "venue": "Shadow Hill Ranch",
+    "lat": 42.508,
+    "lon": -88.297,
     "genres": [
       "country"
     ],
@@ -576,6 +604,8 @@
     "city": "San Diego",
     "state": "CA",
     "venue": "Waterfront Park",
+    "lat": 32.7213,
+    "lon": -117.172,
     "genres": [
       "electronic"
     ],
@@ -615,6 +645,8 @@
     "city": "Orlando",
     "state": "FL",
     "venue": "Tinker Field",
+    "lat": 28.5386,
+    "lon": -81.4048,
     "genres": [
       "electronic"
     ],
@@ -652,6 +684,8 @@
     "city": "Las Vegas",
     "state": "NV",
     "venue": "Las Vegas Motor Speedway",
+    "lat": 36.2719,
+    "lon": -115.0106,
     "genres": [
       "electronic"
     ],
@@ -702,6 +736,8 @@
     "city": "Rothbury",
     "state": "MI",
     "venue": "Double JJ Resort",
+    "lat": 43.5386,
+    "lon": -86.3674,
     "genres": [
       "electronic",
       "jam"
@@ -735,6 +771,8 @@
     "city": "Long Pond",
     "state": "PA",
     "venue": "Pocono Raceway",
+    "lat": 41.0553,
+    "lon": -75.5111,
     "genres": [
       "electronic"
     ],
@@ -772,6 +810,8 @@
     "city": "New Orleans",
     "state": "LA",
     "venue": "Caesars Superdome (evening concerts); Ernest N. Morial Convention Center (daytime)",
+    "lat": 29.946,
+    "lon": -90.0725,
     "genres": [
       "rnb",
       "hip-hop"
@@ -805,6 +845,8 @@
     "city": "Tempe",
     "state": "AZ",
     "venue": "Tempe Beach Park",
+    "lat": 33.4315,
+    "lon": -111.9425,
     "genres": [
       "country"
     ],
@@ -837,6 +879,8 @@
     "city": "Floyd",
     "state": "VA",
     "venue": "FestivalPark (Check, VA)",
+    "lat": 37.0127,
+    "lon": -80.17,
     "genres": [
       "jam",
       "bluegrass",
@@ -877,6 +921,8 @@
     "city": "New York",
     "state": "NY",
     "venue": "Flushing Meadows Corona Park",
+    "lat": 40.7448,
+    "lon": -73.8446,
     "genres": [
       "pop",
       "hip-hop",
@@ -919,6 +965,8 @@
     "city": "San Francisco",
     "state": "CA",
     "venue": "Golden Gate Park (Hellman Hollow, Lindley and Marx meadows)",
+    "lat": 37.77,
+    "lon": -122.486,
     "genres": [
       "bluegrass",
       "folk",
@@ -959,6 +1007,8 @@
     "city": "Pasadena",
     "state": "CA",
     "venue": "Brookside at the Rose Bowl",
+    "lat": 34.1635,
+    "lon": -118.169,
     "genres": [
       "pop",
       "hip-hop",
@@ -1000,6 +1050,8 @@
     "city": "North Charleston",
     "state": "SC",
     "venue": "Riverfront Park",
+    "lat": 32.8698,
+    "lon": -79.9669,
     "genres": [
       "indie",
       "rock",
@@ -1038,6 +1090,8 @@
     "city": "Raleigh",
     "state": "NC",
     "venue": "Downtown Raleigh venues & City Plaza",
+    "lat": 35.7763,
+    "lon": -78.6389,
     "genres": [
       "indie",
       "rock",
@@ -1076,6 +1130,8 @@
     "city": "Miami",
     "state": "FL",
     "venue": "Mana Wynwood",
+    "lat": 25.7998,
+    "lon": -80.1998,
     "genres": [
       "electronic",
       "hip-hop",
@@ -1111,6 +1167,8 @@
     "city": "Tempe",
     "state": "AZ",
     "venue": "Tempe Beach Park",
+    "lat": 33.4317,
+    "lon": -111.9425,
     "genres": [
       "rock",
       "alternative",
@@ -1150,6 +1208,8 @@
     "city": "Pasadena",
     "state": "CA",
     "venue": "Brookside at the Rose Bowl",
+    "lat": 34.1635,
+    "lon": -118.169,
     "genres": [
       "indie",
       "alternative",
@@ -1190,6 +1250,8 @@
     "city": "Salt Lake City",
     "state": "UT",
     "venue": "Utah State Fairpark",
+    "lat": 40.7755,
+    "lon": -111.9215,
     "genres": [
       "indie",
       "alternative",
@@ -1229,6 +1291,8 @@
     "city": "Bakersfield",
     "state": "CA",
     "venue": "Buena Vista Aquatic Recreation Area",
+    "lat": 35.227,
+    "lon": -119.262,
     "genres": [
       "electronic",
       "eclectic"
@@ -1266,6 +1330,8 @@
     "city": "Chicago",
     "state": "IL",
     "venue": "Grant Park",
+    "lat": 41.874,
+    "lon": -87.6205,
     "genres": [
       "alternative",
       "pop",
@@ -1308,6 +1374,8 @@
     "city": "Thornville",
     "state": "OH",
     "venue": "Legend Valley",
+    "lat": 39.9378,
+    "lon": -82.4067,
     "genres": [
       "electronic"
     ],
@@ -1340,6 +1408,8 @@
     "city": "Phoenix",
     "state": "AZ",
     "venue": "Steele Indian School Park",
+    "lat": 33.4978,
+    "lon": -112.0697,
     "genres": [
       "electronic",
       "indie",
@@ -1386,6 +1456,8 @@
     "city": "Wilkesboro",
     "state": "NC",
     "venue": "Wilkes Community College",
+    "lat": 36.1381,
+    "lon": -81.1812,
     "genres": [
       "bluegrass",
       "folk",
@@ -1421,6 +1493,8 @@
     "city": "Detroit",
     "state": "MI",
     "venue": "Hart Plaza",
+    "lat": 42.3278,
+    "lon": -83.0444,
     "genres": [
       "electronic"
     ],
@@ -1457,6 +1531,8 @@
     "city": "Bethlehem",
     "state": "PA",
     "venue": "Downtown Bethlehem & SteelStacks (multiple stages)",
+    "lat": 40.617,
+    "lon": -75.373,
     "genres": [
       "eclectic",
       "rock",
@@ -1498,6 +1574,8 @@
     "city": "New Orleans",
     "state": "LA",
     "venue": "Fair Grounds Race Course",
+    "lat": 29.9831,
+    "lon": -90.0814,
     "genres": [
       "jazz",
       "blues",
@@ -1556,6 +1634,8 @@
     "city": "Newport",
     "state": "RI",
     "venue": "Fort Adams State Park",
+    "lat": 41.478,
+    "lon": -71.3375,
     "genres": [
       "folk",
       "indie",
@@ -1594,6 +1674,8 @@
     "city": "Newport",
     "state": "RI",
     "venue": "Fort Adams State Park",
+    "lat": 41.478,
+    "lon": -71.3375,
     "genres": [
       "jazz",
       "rnb",
@@ -1633,6 +1715,8 @@
     "city": "Bridgeview",
     "state": "IL",
     "venue": "SeatGeek Stadium",
+    "lat": 41.7647,
+    "lon": -87.8061,
     "genres": [
       "electronic",
       "hip-hop",
@@ -1672,6 +1756,8 @@
     "city": "Okeechobee",
     "state": "FL",
     "venue": "Sunshine Grove",
+    "lat": 27.3599,
+    "lon": -80.7336,
     "genres": [
       "eclectic",
       "electronic",
@@ -1710,6 +1796,8 @@
     "city": "San Francisco",
     "state": "CA",
     "venue": "Golden Gate Park",
+    "lat": 37.769,
+    "lon": -122.489,
     "genres": [
       "eclectic",
       "indie",
@@ -1751,6 +1839,8 @@
     "city": "Happy Valley",
     "state": "OR",
     "venue": "Pendarvis Farm",
+    "lat": 45.4405,
+    "lon": -122.4929,
     "genres": [
       "indie",
       "folk",
@@ -1785,6 +1875,8 @@
     "city": "San Francisco",
     "state": "CA",
     "venue": "Pier 80",
+    "lat": 37.748,
+    "lon": -122.381,
     "genres": [
       "electronic",
       "pop",
@@ -1825,6 +1917,8 @@
     "city": "Chicago",
     "state": "IL",
     "venue": "Douglass Park",
+    "lat": 41.8613,
+    "lon": -87.6995,
     "genres": [
       "punk",
       "rock",
@@ -1866,6 +1960,8 @@
     "city": "Cadott",
     "state": "WI",
     "venue": null,
+    "lat": 45.044,
+    "lon": -91.1802,
     "genres": [
       "rock",
       "metal"
@@ -1904,6 +2000,8 @@
     "city": "Lyons",
     "state": "CO",
     "venue": "Planet Bluegrass Ranch",
+    "lat": 40.2225,
+    "lon": -105.278,
     "genres": [
       "folk"
     ],
@@ -1936,6 +2034,8 @@
     "city": "Orlando",
     "state": "FL",
     "venue": "Camping World Stadium",
+    "lat": 28.5392,
+    "lon": -81.4029,
     "genres": [
       "hip-hop"
     ],
@@ -1980,6 +2080,8 @@
     "city": "Philadelphia",
     "state": "PA",
     "venue": "Belmont Plateau, Fairmount Park",
+    "lat": 39.9925,
+    "lon": -75.213,
     "genres": [
       "hip-hop",
       "rnb"
@@ -2013,6 +2115,8 @@
     "city": "Asbury Park",
     "state": "NJ",
     "venue": "North Beach & Bradley Park",
+    "lat": 40.2262,
+    "lon": -73.9993,
     "genres": [
       "rock",
       "alternative",
@@ -2053,6 +2157,8 @@
     "city": "Atlanta",
     "state": "GA",
     "venue": "Piedmont Park",
+    "lat": 33.7865,
+    "lon": -84.3735,
     "genres": [
       "rock",
       "alternative",
@@ -2091,6 +2197,8 @@
     "city": "Las Vegas",
     "state": "NV",
     "venue": "Las Vegas Festival Grounds",
+    "lat": 36.1424,
+    "lon": -115.1603,
     "genres": [
       "metal",
       "alternative",
@@ -2125,6 +2233,8 @@
     "city": "Columbus",
     "state": "OH",
     "venue": "Historic Crew Stadium",
+    "lat": 40.0095,
+    "lon": -82.9912,
     "genres": [
       "rock",
       "metal",
@@ -2167,6 +2277,8 @@
     "city": "Indio",
     "state": "CA",
     "venue": "Empire Polo Club",
+    "lat": 33.6823,
+    "lon": -116.2376,
     "genres": [
       "country"
     ],
@@ -2212,6 +2324,8 @@
     "city": "Chicago",
     "state": "IL",
     "venue": "Grant Park",
+    "lat": 41.872,
+    "lon": -87.6203,
     "genres": [
       "latin",
       "hip-hop"
@@ -2251,6 +2365,8 @@
     "city": "Milwaukee",
     "state": "WI",
     "venue": "Henry Maier Festival Park",
+    "lat": 43.028,
+    "lon": -87.8965,
     "genres": [
       "eclectic",
       "rock",
@@ -2323,6 +2439,8 @@
     "city": "Austin",
     "state": "TX",
     "venue": "Multiple venues, downtown Austin",
+    "lat": 30.2665,
+    "lon": -97.74,
     "genres": [
       "eclectic",
       "indie",
@@ -2368,6 +2486,8 @@
     "city": "Telluride",
     "state": "CO",
     "venue": "Telluride Town Park",
+    "lat": 37.9357,
+    "lon": -107.804,
     "genres": [
       "bluegrass",
       "folk",
@@ -2403,6 +2523,8 @@
     "city": "Fort Lauderdale",
     "state": "FL",
     "venue": "Fort Lauderdale Beach Park",
+    "lat": 26.11,
+    "lon": -80.1055,
     "genres": [
       "country",
       "rock"
@@ -2442,6 +2564,8 @@
     "city": "Boise",
     "state": "ID",
     "venue": null,
+    "lat": 43.6087,
+    "lon": -116.1995,
     "genres": [
       "indie",
       "eclectic",
@@ -2480,6 +2604,8 @@
     "city": "Georgetown",
     "state": "TX",
     "venue": "San Gabriel Park",
+    "lat": 30.6455,
+    "lon": -97.6695,
     "genres": [
       "country",
       "rock"
@@ -2517,6 +2643,8 @@
     "city": "Miami",
     "state": "FL",
     "venue": "Bayfront Park",
+    "lat": 25.7753,
+    "lon": -80.186,
     "genres": [
       "electronic"
     ],
@@ -2561,6 +2689,8 @@
     "city": "Whitefish",
     "state": "MT",
     "venue": "Big Mountain Ranch",
+    "lat": 48.4074,
+    "lon": -114.2822,
     "genres": [
       "country",
       "folk",
