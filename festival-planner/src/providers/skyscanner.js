@@ -4,6 +4,9 @@
 // A search is two calls: `create` starts it and returns the first results plus a
 // sessionToken; `poll` returns the full, growing result set until the status is
 // RESULT_STATUS_COMPLETE.
+//
+// Skyscanner's usage rules: only call this for a search a visitor asked for, with
+// exact dates, and show "Powered by Skyscanner" wherever its prices appear.
 
 const BASE_URL = 'https://partners.api.skyscanner.net/apiservices/v3/flights/live/search';
 
@@ -43,8 +46,9 @@ export function buildSearchBody({ origin, destination, departDate, returnDate, a
   };
 }
 
-// Finds the cheapest itinerary in a create/poll response. Prices are for all
-// adults in the search combined.
+// Finds the cheapest itinerary in a create/poll response. Itineraries are
+// unordered, so this scans every pricing option. Prices are treated as the total
+// for all adults in the search; check this against a real response.
 export function cheapestQuote(response, adults) {
   const results = response?.content?.results;
   const itineraries = results?.itineraries ?? {};
@@ -114,6 +118,7 @@ export function createSkyscannerFlights({
         await sleep(pollIntervalMs);
         response = await call(`/poll/${encodeURIComponent(response.sessionToken)}`);
       }
+      if (response.status === 'RESULT_STATUS_FAILED') throw new Error('Skyscanner search failed');
       return cheapestQuote(response, adults);
     },
   };

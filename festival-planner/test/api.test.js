@@ -117,15 +117,25 @@ test('live trip uses the flight quote for the right dates', async () => {
 
 test('live trip falls back to the estimate when the flight API fails', async () => {
   flightsBehavior = 'error';
-  const { status, body } = await get('/api/v1/festivals/desert-fest/trip?origin=ORD&live=1');
+  const { status, body } = await get('/api/v1/festivals/lake-fest/trip?origin=LAX&live=1');
   assert.equal(status, 200);
   assert.equal(body.travel.source, 'estimate');
   assert.equal(body.live.flights, 'error');
 
   flightsBehavior = 'empty';
-  const empty = await get('/api/v1/festivals/desert-fest/trip?origin=ORD&travelers=3&live=1');
+  const empty = await get('/api/v1/festivals/lake-fest/trip?origin=LAX&travelers=3&live=1');
   assert.equal(empty.body.live.flights, 'no-results');
   assert.equal(empty.body.travel.source, 'estimate');
+});
+
+test('live prices are never fetched for projected dates', async () => {
+  flightsBehavior = 'ok';
+  flightCalls.length = 0;
+  const { body } = await get('/api/v1/festivals/desert-fest/trip?origin=JFK&live=1');
+  assert.equal(body.edition.projected, true);
+  assert.equal(body.travel.source, 'estimate');
+  assert.equal(body.live.flights, 'needs-confirmed-dates');
+  assert.equal(flightCalls.length, 0);
 });
 
 test('festivals with nothing upcoming cannot be priced', async () => {

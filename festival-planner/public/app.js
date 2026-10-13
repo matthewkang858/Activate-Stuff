@@ -155,6 +155,11 @@ function describeLive(live) {
   return `Flights: ${labels[live.flights] ?? live.flights}. Hotels: ${labels[live.hotels] ?? live.hotels}.`;
 }
 
+// Live prices need real dates, so projected editions only get estimates.
+function updateLiveButton(button, edition) {
+  button.hidden = !(config.live.flights || config.live.hotels) || edition.projected;
+}
+
 function renderCard(festival, trip) {
   const card = cardTemplate.content.firstElementChild.cloneNode(true);
   card.querySelector('.name').textContent = festival.name;
@@ -199,6 +204,7 @@ function renderCard(festival, trip) {
     select.addEventListener('change', async () => {
       edition = editions[Number(select.value)];
       renderWhen(card, edition);
+      updateLiveButton(card.querySelector('.live-btn'), edition);
       try {
         renderTrip(card, await api(`festivals/${festival.id}/trip`, tripParams(edition, false)));
         note.hidden = true;
@@ -210,8 +216,8 @@ function renderCard(festival, trip) {
   }
 
   const liveButton = card.querySelector('.live-btn');
+  updateLiveButton(liveButton, edition);
   if (config.live.flights || config.live.hotels) {
-    liveButton.hidden = false;
     liveButton.addEventListener('click', async () => {
       liveButton.disabled = true;
       liveButton.textContent = 'Searching…';
@@ -220,8 +226,10 @@ function renderCard(festival, trip) {
       try {
         const live = await api(`festivals/${festival.id}/trip`, tripParams(edition, true));
         renderTrip(card, live);
-        note.textContent = describeLive(live.live)
-          + (live.edition.projected ? ' Dates are projected, so treat live prices as a preview.' : '');
+        note.textContent = describeLive(live.live);
+        if (live.travel.source === 'skyscanner') {
+          note.insertAdjacentHTML('beforeend', ' <a href="https://www.skyscanner.net" target="_blank" rel="noopener">Powered by Skyscanner</a>');
+        }
       } catch (error) {
         note.textContent = error.message;
       } finally {

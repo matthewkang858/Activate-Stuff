@@ -105,3 +105,12 @@ test('roundTrip surfaces HTTP errors', async () => {
     /HTTP 401/,
   );
 });
+
+test('roundTrip treats a failed search as an error', async () => {
+  const fetchImpl = async () => new Response(JSON.stringify(response('RESULT_STATUS_FAILED', {})), { status: 200 });
+  const flights = createSkyscannerFlights({ apiKey: 'k', fetchImpl });
+  await assert.rejects(
+    flights.roundTrip({ origin: 'JFK', destination: 'PSP', departDate: '2027-04-09', returnDate: '2027-04-12', adults: 1 }),
+    /search failed/,
+  );
+});

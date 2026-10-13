@@ -38,6 +38,32 @@ for **comparing** festivals, not quotes, and the UI labels them as estimates.
 Festivals whose next dates haven't been announced are projected 52 weeks ahead from their last edition, which
 keeps a Friday–Sunday festival on Friday–Sunday. These show a **projected** badge and can be hidden.
 
+## Live prices and API keys
+
+**Skyscanner (flights) is wired up but hard to get.** Keys are only issued to approved commercial partners:
+established businesses with roughly 100k+ monthly users. Students, individuals, early start-ups and low-traffic
+sites are explicitly excluded ([acceptance criteria](https://skyscannerpartnersupport.zendesk.com/hc/en-us/articles/10881149122717-What-is-the-acceptance-criteria-for-the-Travel-API),
+[apply](https://www.partners.skyscanner.net/product/travel-api)). If you do get a key, the integration follows
+their [usage guidelines](https://developers.skyscanner.net/docs/getting-started/usage-guidelines):
+
+- Live searches only run when a visitor clicks for one festival, and never for projected dates.
+- Results show "Powered by Skyscanner" linked to skyscanner.net. The guidelines also want their logo there.
+- Their terms disagree on caching (24 hours vs. none), so set `LIVE_CACHE_MINUTES` to whatever your agreement says.
+- Not yet checked against a real response: whether the price is per person or for the whole party. The code assumes the whole party.
+- For ranking many festivals at once, their separate Flights Indicative Prices API (cached prices) is the right tool, not Live Prices.
+
+**Self-serve alternatives**, if Skyscanner says no. None are wired up yet; each would be a new file in `src/providers/`
+exposing the same `roundTrip()` / `cheapestStay()` shape that `src/app.js` already calls:
+
+| Need | Option | Notes |
+| --- | --- | --- |
+| Hotels | [LiteAPI](https://github.com/liteapi-travel/nodejs-sdk) | Free sandbox key; `POST /v3.0/hotels/rates` by lat/lng + dates. Needs festival coordinates added to the data |
+| Hotels or flights | SerpApi (Google Hotels / Google Flights) | Paid per search, simple to call; good for estimates |
+| Flights | Duffel | Real bookable fares, self-serve; built for booking, so heavy search-only use may cost extra |
+| Ticket prices | Ticketmaster Discovery API | Free key; `priceRanges` is often missing for festivals, so keep the hand-entered prices as a fallback |
+
+Amadeus Self-Service, the usual free choice for both flights and hotels, has been [deprecated](https://github.com/amadeus4dev/developer-guides) (its GitHub org was archived in July 2026), so it is not an option.
+
 ## API
 
 All endpoints are `GET` and return JSON.

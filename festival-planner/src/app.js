@@ -183,6 +183,10 @@ export function createApp({
     const wantsLive = req.query.live === '1' || req.query.live === 'true';
     const live = { flights: flights ? 'skipped' : 'not-configured', hotels: hotels ? 'skipped' : 'not-configured' };
     if (!wantsLive || (!flights && !hotels)) return res.json({ ...estimate, live });
+    // Live price APIs are for real trips; projected dates are only a guess.
+    if (edition.projected) {
+      return res.json({ ...estimate, live: { flights: 'needs-confirmed-dates', hotels: 'needs-confirmed-dates' } });
+    }
 
     if (!allowLive(req.ip)) {
       return res.status(429).json({ error: 'Too many live price searches. Try again in a minute.' });
