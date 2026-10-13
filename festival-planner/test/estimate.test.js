@@ -14,6 +14,13 @@ test('trip dates cover the festival, optionally arriving a night early', () => {
   assert.deepEqual(tripDates(weekend1, { arriveEarly: true }), { checkIn: '2026-04-09', checkOut: '2026-04-13', nights: 4, shortened: false });
 });
 
+test('a stay never starts before the earliest date', () => {
+  assert.deepEqual(tripDates(weekend1, { earliest: '2026-04-11' }), {
+    checkIn: '2026-04-11', checkOut: '2026-04-13', nights: 2, shortened: false,
+  });
+  assert.deepEqual(tripDates(weekend1, { earliest: '2026-03-01' }).checkIn, '2026-04-10');
+});
+
 test('long festivals are priced as a capped stay', () => {
   const tenDays = { start: '2026-07-31', end: '2026-08-09' };
   assert.deepEqual(tripDates(tenDays), {

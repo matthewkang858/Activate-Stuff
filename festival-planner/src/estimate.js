@@ -32,8 +32,11 @@ export const ASSUMPTIONS = {
 
 const roundTo = (value, step) => Math.round(value / step) * step;
 
-export function tripDates(edition, { arriveEarly = false } = {}) {
-  const checkIn = arriveEarly ? addDays(edition.start, -1) : edition.start;
+// `earliest` (today) keeps a festival that has already started from being
+// priced with a check-in date in the past.
+export function tripDates(edition, { arriveEarly = false, earliest } = {}) {
+  const planned = arriveEarly ? addDays(edition.start, -1) : edition.start;
+  const checkIn = earliest && earliest > planned ? earliest : planned;
   const fullStay = daysBetween(checkIn, addDays(edition.end, 1));
   const nights = Math.min(fullStay, ASSUMPTIONS.maxNights);
   return { checkIn, checkOut: addDays(checkIn, nights), nights, shortened: nights < fullStay };
@@ -115,10 +118,10 @@ export const defaultRooms = (travelers) => Math.ceil(travelers / ASSUMPTIONS.peo
 // Combines the three cost components into one trip summary. `travel` and `lodging`
 // can be passed in (e.g. live prices) to replace the offline estimates.
 export function buildTrip({
-  festival, edition, originAirport, festivalAirports, travelers, rooms, arriveEarly, typicalTicketPrice,
+  festival, edition, originAirport, festivalAirports, travelers, rooms, arriveEarly, earliest, typicalTicketPrice,
   travel, lodging,
 }) {
-  const dates = tripDates(edition, { arriveEarly });
+  const dates = tripDates(edition, { arriveEarly, earliest });
   const travelCost = travel ?? estimateTravel({ originAirport, festivalAirports, travelers });
   const lodgingCost = lodging ?? (travelCost.local
     ? { nights: 0, rooms: 0, nightly: 0, total: 0, source: 'estimate', note: 'Close enough to sleep at home.' }

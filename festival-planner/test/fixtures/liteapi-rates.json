@@ -1,0 +1,188 @@
+{
+  "data": [
+    {
+      "hotelId": "lp1897",
+      "roomTypes": [
+        {
+          "roomTypeId": "GQ2TOLJWGI4TK7CSIZHHYMRQGI2TAMZTGAYDEMBQPQYXYURRGIYTO7BRGU3TGNY",
+          "offerId": "GE5ESNBSIZKVMQ2QJJNEERSPKIZEMR2OIRKVOVCTKNFVMRCWKNLUWVKKGVDVMRKWGJEEWRSOIVEVCS2PJNJEEVKPK5FFKS2SI5LFKU2TLBETIMSGKVJEGQSKLJHEMR2SGIZEWUSDIUZFOU2TJM2UOVSFJZJUKSKOIVLFKVJSJBEUMTSFJFJTETSJJJFVKT2RJNNEYQSNKUZFKU2SJE2UKVCFKZBUESS2IJDEGURSJNDVURCVK5GTEVCHGVDFMTKTKNMUYRSMIVLVMQ2RJNFEMVSNKIZFGSKRGJCU6U2TIJFVEQKWINGVUVKJGVCVMVKSINJEUVK2KREVGMSWJRFEIRJSKYZEKS2OJFDEGV2LKVFDKSCFIVKUWSCHKFNEMSKTGJHUWSSNKVHVCSSUJFJEEVJUKEZEUSSSIJDE6U2DJZFEMTSGJ5JDESSHKJFUKV2TJMZEWVSEKZFU2MSUI5FEQRSFKUZESSKVLJDFCV2LKZFU4RCVKVLVEV2JKJBVKMSRKNKESNKLKZJVEQ2IJJLE4RSDKIZEETCKINCUGVCLIVDVERCVJVHFGR2JKZDVKVKVGJEESVK2KZIVOS2OJJFEYRKPJZBTES2SJBKVGTKTKRFESMSGIVLFGRSLJJFFKNSSJNHEYSSDIVBVIS2TJNNEIRSLK5FUKSJVI5CVKVSDJBEUMSKVJFIUWTSLJFNEKT2RJNNESRRWIRBU4USUIZMTGRCNG5BFGR2BLJCEWTCKKFDU2V2UI5GUEQKHIFNEIVKNIJIUQSKZIRATOQ2TJI2HYNRSHE2XYMT4NRYDCOBZG56DELL4KVJUI7CVKN6DEMBSGUWTANBNGAYXYMRQGI2S2MBUFUYDE7D4GQXDAMA",
+          "supplier": "nuitee",
+          "supplierId": 2,
+          "rates": [
+            {
+              "rateId": "I42FUVCPJZBFOR2FGNDUWTSSKVDVSWKUJ5GVEV2HKFNEIQKOKRBUOWJUKRGVUSSXI42FURCBJZNFGR22KRCE2WSSK5GVENSEINEVUU2HIFNEIS2NIJKUOQKZLBMU2USRI5ETEVCBJZBFCR2KGZDUWM2TG5FVMSSYLFLEWVCQKJFVMR2SIQ2EOSSBKRAVCMZUI5EVURCRJUZTIS2VLJDE2V2EKNIFCWKUJ5HEEUKHGQZFIS2OKJMUOQJTIRBU4Q2JJRBFOSCNJFNFOR2JGRKEWSK2KVDVKM2TGJHFEU2IIUZFQWKVKNDUUWRWIRCU2QSTI5KVSRCHJVNFCR2BLJCECTKEGRDUMNSGIVGUUU2HIUZVQWKNJJLEONC2KRHUSMSTJI2FEVSFKJJU6RKNLJCECTKSKZDFKWKEI5GEUVCHIFIUIQKNKIZEOQKZIF6DCNRTFY3DM7BSGAZDKLJQGMWTGMBAGAZDUMBQHIYDA7CSJ4",
+              "occupancyNumber": 1,
+              "name": "Standard King Room",
+              "maxOccupancy": 2,
+              "adultCount": 2,
+              "childCount": 0,
+              "childrenAges": [],
+              "boardType": "RO",
+              "boardName": "Room Only",
+              "remarks": "",
+              "priceType": "commission",
+              "commission": [
+                {
+                  "amount": 6.28,
+                  "currency": "USD"
+                }
+              ],
+              "retailRate": {
+                "total": [
+                  {
+                    "amount": 163.66,
+                    "currency": "USD"
+                  }
+                ],
+                "suggestedSellingPrice": [
+                  {
+                    "amount": 191.52,
+                    "currency": "USD",
+                    "source": "booking.com"
+                  }
+                ],
+                "initialPrice": [
+                  {
+                    "amount": 163.66,
+                    "currency": "USD"
+                  }
+                ],
+                "taxesAndFees": [
+                  {
+                    "included": true,
+                    "description": "NYC Javits Center Fee",
+                    "amount": 1.62,
+                    "currency": "USD"
+                  },
+                  {
+                    "included": true,
+                    "description": "NYC Occupancy Tax",
+                    "amount": 2.16,
+                    "currency": "USD"
+                  },
+                  {
+                    "included": true,
+                    "description": "NY State Tax",
+                    "amount": 11.88,
+                    "currency": "USD"
+                  },
+                  {
+                    "included": true,
+                    "description": "NY City Tax",
+                    "amount": 7.87,
+                    "currency": "USD"
+                  },
+                  {
+                    "included": false,
+                    "description": "Facility Fee",
+                    "amount": 43.61,
+                    "currency": "USD"
+                  }
+                ],
+                "promotions": [
+                  {
+                    "name": "Early booker Deal",
+                    "from": "2025-11-14",
+                    "to": "2025-11-27",
+                    "discount": 45,
+                    "discountType": "percentage",
+                    "promotionCode": "",
+                    "currency": "THB"
+                  }
+                ]
+              },
+              "cancellationPolicies": {
+                "cancelPolicyInfos": [
+                  {
+                    "cancelTime": "2026-07-30 02:00:00",
+                    "amount": 163.66,
+                    "currency": "USD",
+                    "type": "amount",
+                    "timezone": "GMT"
+                  }
+                ],
+                "hotelRemarks": [],
+                "refundableTag": "RFN"
+              },
+              "paymentTypes": [
+                "NUITEE_PAY",
+                "PROPERTY_PAY"
+              ],
+              "perks": [
+                {
+                  "perkId": 10,
+                  "name": "Daily breakfast for 2",
+                  "amount": 40,
+                  "currency": "USD",
+                  "level": "HOTEL"
+                },
+                {
+                  "perkId": 5,
+                  "name": "Late check-out if available",
+                  "amount": 20,
+                  "currency": "USD",
+                  "level": "HOTEL"
+                },
+                {
+                  "perkId": 8,
+                  "name": "Room upgrade if available",
+                  "amount": 60,
+                  "currency": "USD",
+                  "level": "HOTEL"
+                },
+                {
+                  "perkId": 6,
+                  "name": "Early check-in if available",
+                  "amount": 0,
+                  "currency": "USD",
+                  "level": "HOTEL"
+                },
+                {
+                  "perkId": 2,
+                  "name": "$100 Property credit",
+                  "amount": 100,
+                  "currency": "USD",
+                  "level": "HOTEL"
+                },
+                {
+                  "perkId": 16,
+                  "name": "Free laundry service",
+                  "amount": 35,
+                  "currency": "USD",
+                  "level": "HOTEL"
+                }
+              ]
+            }
+          ],
+          "offerRetailRate": {
+            "amount": 163.66,
+            "currency": "USD"
+          },
+          "suggestedSellingPrice": {
+            "amount": 191.52,
+            "currency": "USD",
+            "source": "booking.com"
+          },
+          "offerInitialPrice": {
+            "amount": 163.66,
+            "currency": "USD"
+          },
+          "priceType": "commission",
+          "rateType": "standard"
+        }
+      ]
+    }
+  ],
+  "guestLevel": 0,
+  "sandbox": true,
+  "hotels": [
+    {
+      "id": "lp1897",
+      "name": "Hotel Example NYC",
+      "main_photo": "https://static.cupid.travel/123456/123456a_hb_a_001.jpg",
+      "thumbnail": "https://static.cupid.travel/small/12/123456/123456a_hb_a_001.jpg",
+      "address": "123 Example Street, New York, NY 10001",
+      "rating": 8.5
+    }
+  ]
+}

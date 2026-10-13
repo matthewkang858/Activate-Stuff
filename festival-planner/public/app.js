@@ -207,17 +207,23 @@ function renderCard(festival, trip) {
 
   const select = card.querySelector('.edition');
   let edition = editions[0];
+  // Only the latest request for this card may draw, so a slow live search
+  // can't overwrite the dates picked after it started.
+  let cardRequest = 0;
   if (editions.length > 1) {
     select.hidden = false;
     select.replaceChildren(...editions.map((e, i) => new Option(e.label ?? formatRange(e), String(i))));
     select.addEventListener('change', async () => {
+      const id = ++cardRequest;
       edition = editions[Number(select.value)];
       renderWhen(card, edition);
       updateLiveButton(card.querySelector('.live-btn'), edition);
+      note.hidden = true;
       try {
-        renderTrip(card, await api(`festivals/${festival.id}/trip`, tripParams(edition, false)));
-        note.hidden = true;
+        const trip = await api(`festivals/${festival.id}/trip`, tripParams(edition, false));
+        if (id === cardRequest) renderTrip(card, trip);
       } catch (error) {
+        if (id !== cardRequest) return;
         note.hidden = false;
         note.textContent = error.message;
       }
@@ -228,12 +234,14 @@ function renderCard(festival, trip) {
   updateLiveButton(liveButton, edition);
   if (config.live.flights || config.live.hotels) {
     liveButton.addEventListener('click', async () => {
+      const id = ++cardRequest;
       liveButton.disabled = true;
       liveButton.textContent = 'Searching…';
       note.hidden = false;
       note.textContent = 'Checking live fares and rooms. This can take 10–20 seconds.';
       try {
         const live = await api(`festivals/${festival.id}/trip`, tripParams(edition, true));
+        if (id !== cardRequest) return;
         renderTrip(card, live);
         note.textContent = describeLive(live.live)
           + (live.edition.projected ? ' Dates are projected, so treat live prices as a preview.' : '');
@@ -241,7 +249,7 @@ function renderCard(festival, trip) {
           note.insertAdjacentHTML('beforeend', ' <a href="https://www.skyscanner.net" target="_blank" rel="noopener">Powered by Skyscanner</a>');
         }
       } catch (error) {
-        note.textContent = error.message;
+        if (id === cardRequest) note.textContent = error.message;
       } finally {
         liveButton.disabled = false;
         liveButton.textContent = 'Refresh live prices';

@@ -73,6 +73,7 @@ export function createApp({
     return {
       originAirport: originParam(query.origin),
       typicalTicketPrice: data.typicalTicketPrice,
+      earliest: today(),
       travelers,
       // Every room needs someone in it.
       rooms: Math.min(travelers, intParam(query.rooms, { name: 'rooms', min: 1, max: 6, fallback: defaultRooms(travelers) })),
@@ -186,7 +187,7 @@ export function createApp({
     // Skyscanner live pricing is only for exact trips, and projected dates are
     // a guess. Hotel rates for projected dates are shown as a preview.
     const searchFlights = Boolean(flights) && !edition.projected;
-    if (flights && edition.projected) live.flights = 'needs-confirmed-dates';
+    if (flights && edition.projected && estimate.travel.mode === 'fly') live.flights = 'needs-confirmed-dates';
     if (!wantsLive || (!searchFlights && !hotels)) return res.json({ ...estimate, live });
 
     if (!allowLive(req.ip)) {

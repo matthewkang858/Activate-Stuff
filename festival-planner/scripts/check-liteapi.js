@@ -6,7 +6,7 @@
 // roughly 3x the 1-night price. If the two are about equal, prices are per
 // night and src/providers/liteapi.js needs to multiply by the number of nights.
 
-import { buildRatesBody, cheapestOffer } from '../src/providers/liteapi.js';
+import { buildRatesBody, cheapestOffer, requestRates } from '../src/providers/liteapi.js';
 import { addDays, todayISO } from '../src/dates.js';
 
 const apiKey = process.env.LITEAPI_API_KEY;
@@ -19,23 +19,15 @@ if (!apiKey) {
 const where = { lat: 36.1627, lon: -86.7816 };
 const checkIn = addDays(todayISO(), 45);
 
-async function rates(body) {
-  const res = await fetch('https://api.liteapi.travel/v3.0/hotels/rates', {
-    method: 'POST',
-    headers: { 'X-API-Key': apiKey, 'Content-Type': 'application/json', Accept: 'application/json' },
-    body: JSON.stringify(body),
-  });
-  const text = await res.text();
-  if (!res.ok) throw new Error(`HTTP ${res.status}: ${text.slice(0, 300)}`);
-  return JSON.parse(text);
-}
+// Null when LiteAPI has no availability.
+const rates = (body) => requestRates({ apiKey, body });
 
 const base = { checkIn, occupancies: [{ adults: 2 }], currency: 'USD', guestNationality: 'US' };
 
 const oneNight = await rates(buildRatesBody({
   ...where, ...base, checkOut: addDays(checkIn, 1), radiusMeters: 5000, limit: 50,
 }));
-const first = cheapestOffer(oneNight, 'USD');
+const first = oneNight && cheapestOffer(oneNight, 'USD');
 if (!first) {
   console.log('No rooms came back for the 1-night search; try again later.');
   process.exit(1);
@@ -50,9 +42,9 @@ const threeNights = await rates({
   guestNationality: 'US',
   maxRatesPerHotel: 1,
   includeHotelData: true,
-  timeout: 8,
+  timeout: 12,
 });
-const second = cheapestOffer(threeNights, 'USD');
+const second = threeNights && cheapestOffer(threeNights, 'USD');
 if (!second) {
   console.log(`${first.hotelName ?? first.hotelId} had no 3-night availability; run it again.`);
   process.exit(1);

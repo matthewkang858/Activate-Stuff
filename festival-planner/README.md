@@ -49,8 +49,9 @@ keeps a Friday–Sunday festival on Friday–Sunday. These show a **projected** 
    offer price covers the whole stay, which is what the app assumes. LiteAPI's docs don't say either way.
 
 How it searches ([`src/providers/liteapi.js`](src/providers/liteapi.js)): one `POST /v3.0/hotels/rates` around
-the festival's coordinates, splitting your group across the rooms you asked for, cheapest rate per hotel. If
-nothing comes back within 15 km it tries 40 km, then falls back to the estimate. Sandbox keys may return test
+the festival's coordinates, splitting your group across the rooms you asked for, pricing up to 1,000 hotels and
+taking the cheapest. If nothing comes back within 15 km it tries 40 km, then falls back to the estimate. A festival
+that has already started is priced from today. Sandbox keys may return test
 prices; the card says "Sandbox test price" when they do. If they turn out to be test data, switch to a production key.
 Hotel prices also work for projected dates, as a preview.
 
