@@ -130,10 +130,17 @@ function renderTrip(card, trip) {
   const booking = travel.deepLink
     ? ` <a href="${escapeHtml(travel.deepLink)}" target="_blank" rel="noopener sponsored">Book ↗</a>`
     : '';
+  // Lines are what the whole group pays; the headline is that total split per person.
+  const people = trip.travelers;
+  // Only shown when it multiplies out exactly (live fares can be off by rounding).
+  const each = ({ perPerson, total }) => (people > 1 && perPerson > 0 && perPerson * people === total
+    ? ` (${people}\u00a0×\u00a0${money.format(perPerson)})` : '');
+  const flightsEach = travel.mode === 'fly' ? each(travel) : '';
   card.querySelector('.breakdown').innerHTML = `
-    <dt class="tickets">Tickets</dt><dd>${escapeHtml(tickets.note)} ${sourceBadge(tickets.source)}</dd><dd class="amount">${ticketAmount}</dd>
-    <dt class="travel">${travelLabel}</dt><dd>${escapeHtml(travel.note)} ${sourceBadge(travel.source)}${booking}</dd><dd class="amount">${money.format(travel.total)}</dd>
+    <dt class="tickets">Tickets</dt><dd>${escapeHtml(tickets.note)}${each(tickets)} ${sourceBadge(tickets.source)}</dd><dd class="amount">${ticketAmount}</dd>
+    <dt class="travel">${travelLabel}</dt><dd>${escapeHtml(travel.note)}${flightsEach} ${sourceBadge(travel.source)}${booking}</dd><dd class="amount">${money.format(travel.total)}</dd>
     <dt class="lodging">Hotel</dt><dd>${escapeHtml(lodging.note)} ${sourceBadge(lodging.source)}</dd><dd class="amount">${money.format(lodging.total)}</dd>
+    <dt class="total">Total for ${people} ${people === 1 ? 'person' : 'people'}</dt><dd class="amount total">${money.format(trip.total)}</dd>
   `;
 }
 
