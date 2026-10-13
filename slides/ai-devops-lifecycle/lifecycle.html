@@ -1,101 +1,194 @@
 <section id="lifecycle" style="background:linear-gradient(180deg, #FCFDFE 0%, #ECEFF3 100%);font-family:'Montserrat', Arial, sans-serif;color:#1B365D;padding:64px;display:flex;flex-direction:column">
-<svg aria-label="Eight-segment ring of the DevOps lifecycle, clockwise from the left: 1 Plan, 2 Code, 3 Build / Review, 4 Test across the top half (Dev), then 5 Release, 6 Deploy, 7 Operate, 8 Monitor across the bottom half (Ops), looping back to Plan" viewBox="0 0 1920 1080" width="1920" height="1080" style="position:absolute;left:0px;top:0px;width:1920px;height:1080px">
+<svg aria-label="Eight-segment ring of the DevOps lifecycle: stages 1 Plan, 2 Code, 3 Build / Review and 4 Test run down the left half (Dev); 5 Release, 6 Deploy, 7 Operate and 8 Monitor run back up the right half (Ops), looping to Plan" viewBox="0 0 1920 1080" width="1920" height="1080" style="position:absolute;left:0px;top:0px;width:1920px;height:1080px">
 <polygon points="0,36 528,36 554,58 528,80 0,80" fill="#0B78B0"/>
-<path d="M104.5 636.0 A856 400 0 0 1 1815.5 636.0" fill="none" stroke="#5B57C2" stroke-width="8" stroke-linecap="round"/>
-<path d="M1815.5 664.0 A856 400 0 0 1 104.5 664.0" fill="none" stroke="#3DB54A" stroke-width="8" stroke-linecap="round"/>
-<polygon points="1803.5,626 1827.5,626 1815.5,650" fill="#5B57C2"/>
-<polygon points="92.5,674 116.5,674 104.5,650" fill="#3DB54A"/>
-<polyline points="176,282 410,282 410,339" fill="none" stroke="#5B57C2" stroke-width="3"/>
-<circle cx="176" cy="282" r="7" fill="#5B57C2"/>
-<polyline points="1565,937 1565,1004 1742,1004" fill="none" stroke="#3DB54A" stroke-width="3"/>
-<circle cx="1742" cy="1004" r="7" fill="#3DB54A"/>
-<ellipse cx="960" cy="650" rx="440" ry="122" fill="#FCFDFE"/>
-<g stroke="#F3F5F8" stroke-width="8" stroke-linejoin="round">
-<path fill="#7E57C2" d="M124.0 650.0 A836 380 0 0 1 368.9 381.3 L536.8 461.5 L648.9 563.7 A440 122 0 0 0 520.0 650.0 L322.0 620.0 Z"/>
-<path fill="#44479E" d="M368.9 381.3 A836 380 0 0 1 960.0 270.0 L990.0 399.0 L960.0 528.0 A440 122 0 0 0 648.9 563.7 L536.8 461.5 Z"/>
-<path fill="#1E3A64" d="M960.0 270.0 A836 380 0 0 1 1551.1 381.3 L1439.1 483.5 L1271.1 563.7 A440 122 0 0 0 960.0 528.0 L990.0 399.0 Z"/>
-<path fill="#0A68AE" d="M1551.1 381.3 A836 380 0 0 1 1796.0 650.0 L1598.0 680.0 L1400.0 650.0 A440 122 0 0 0 1271.1 563.7 L1439.1 483.5 Z"/>
-<path fill="#0B7F86" d="M1796.0 650.0 A836 380 0 0 1 1551.1 918.7 L1383.2 838.5 L1271.1 736.3 A440 122 0 0 0 1400.0 650.0 L1598.0 680.0 Z"/>
-<path fill="#0A5E44" d="M1551.1 918.7 A836 380 0 0 1 960.0 1030.0 L930.0 901.0 L960.0 772.0 A440 122 0 0 0 1271.1 736.3 L1383.2 838.5 Z"/>
-<path fill="#2C7230" d="M960.0 1030.0 A836 380 0 0 1 368.9 918.7 L480.9 816.5 L648.9 736.3 A440 122 0 0 0 960.0 772.0 L930.0 901.0 Z"/>
-<path fill="#557A16" d="M368.9 918.7 A836 380 0 0 1 124.0 650.0 L322.0 620.0 L520.0 650.0 A440 122 0 0 0 648.9 736.3 L480.9 816.5 Z"/>
+<path d="M936.0 848.7 A230 230 0 0 1 936.0 391.3" fill="none" stroke="#5B57C2" stroke-width="6" stroke-linecap="round"/>
+<path d="M984.0 391.3 A230 230 0 0 1 984.0 848.7" fill="none" stroke="#3DB54A" stroke-width="6" stroke-linecap="round"/>
+<polygon points="958.3,850.4 940.1,858.8 941.4,839.6" fill="#5B57C2"/>
+<polygon points="961.7,389.6 979.9,381.2 978.6,400.4" fill="#3DB54A"/>
+<circle cx="960" cy="620" r="110" fill="#FCFDFE"/>
+<g stroke="#F3F5F8" stroke-width="6" stroke-linejoin="round">
+<path fill="#7E57C2" d="M810.1 470.1 A212 212 0 0 1 960.0 408.0 L938.0 459.0 L960.0 510.0 A110 110 0 0 0 882.2 542.2 L830.6 521.7 Z"/>
+<path fill="#44479E" d="M748.0 620.0 A212 212 0 0 1 810.1 470.1 L830.6 521.7 L882.2 542.2 A110 110 0 0 0 850.0 620.0 L799.0 642.0 Z"/>
+<path fill="#1E3A64" d="M810.1 769.9 A212 212 0 0 1 748.0 620.0 L799.0 642.0 L850.0 620.0 A110 110 0 0 0 882.2 697.8 L861.7 749.4 Z"/>
+<path fill="#0A68AE" d="M960.0 832.0 A212 212 0 0 1 810.1 769.9 L861.7 749.4 L882.2 697.8 A110 110 0 0 0 960.0 730.0 L982.0 781.0 Z"/>
+<path fill="#0B7F86" d="M1109.9 769.9 A212 212 0 0 1 960.0 832.0 L982.0 781.0 L960.0 730.0 A110 110 0 0 0 1037.8 697.8 L1089.4 718.3 Z"/>
+<path fill="#0A5E44" d="M1172.0 620.0 A212 212 0 0 1 1109.9 769.9 L1089.4 718.3 L1037.8 697.8 A110 110 0 0 0 1070.0 620.0 L1121.0 598.0 Z"/>
+<path fill="#2C7230" d="M1109.9 470.1 A212 212 0 0 1 1172.0 620.0 L1121.0 598.0 L1070.0 620.0 A110 110 0 0 0 1037.8 542.2 L1058.3 490.6 Z"/>
+<path fill="#557A16" d="M960.0 408.0 A212 212 0 0 1 1109.9 470.1 L1058.3 490.6 L1037.8 542.2 A110 110 0 0 0 960.0 510.0 L938.0 459.0 Z"/>
 </g>
 </svg>
 <p style="position:absolute;left:64px;top:39px;width:460px;font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:500;line-height:1.4;letter-spacing:1px;color:#FBFCFD">SOFTWARE DEVELOPMENT CASE STUDY</p>
 <p style="position:absolute;left:1500px;top:40px;width:356px;font-family:'Oswald', Arial, sans-serif;font-size:32px;font-weight:600;line-height:1.1;letter-spacing:0.5px;text-align:right;color:#D7262E">DISCUSSION DRAFT</p>
-<h1 style="position:absolute;left:64px;top:96px;width:1792px;font-family:'Oswald', Arial, sans-serif;font-size:56px;font-weight:600;line-height:1.04;letter-spacing:-0.5px;color:#1B365D">This case study maps AI across the eight DevOps stages, naming the incumbent, best-funded challenger and niche pick in each</h1>
-<p style="position:absolute;left:64px;top:258px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#5B57C2">DEV</p>
-<p style="position:absolute;left:64px;top:308px;width:240px;font-size:24px;font-weight:600;line-height:1.25;color:#5A6472">Stages 1–4</p>
-<p style="position:absolute;left:1756px;top:980px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:44px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:right;color:#23803A">OPS</p>
-<p style="position:absolute;left:1616px;top:1030px;width:240px;font-size:24px;font-weight:600;line-height:1.25;text-align:right;color:#5A6472">Stages 5–8</p>
-<h2 style="position:absolute;left:560px;top:568px;width:800px;font-size:42px;font-weight:800;line-height:1.05;text-align:center;color:#1B365D">AI ACROSS THE<br>DEVOPS LIFECYCLE</h2>
-<p style="position:absolute;left:560px;top:672px;width:800px;font-size:24px;font-weight:500;line-height:1.25;text-align:center;color:#4A5568">In each stage, top to bottom:<br><b>Incumbent · Challenger · Niche pick</b></p>
-<div style="position:absolute;left:232px;top:460px;width:276px;height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+<h1 style="position:absolute;left:64px;top:92px;width:1792px;font-family:'Oswald', Arial, sans-serif;font-size:48px;font-weight:600;line-height:1.04;letter-spacing:-0.5px;color:#1B365D">This case study maps AI across the eight DevOps stages, naming the incumbent, best-funded challenger and niche pick in each</h1>
+<p style="position:absolute;left:727px;top:250px;width:466px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:500;line-height:1.2;letter-spacing:1px;text-align:center;color:#5A6472">IN EACH CARD, TOP TO BOTTOM</p>
+<p style="position:absolute;left:727px;top:280px;width:466px;font-size:20px;font-weight:600;line-height:1.3;text-align:center;color:#1B365D">Incumbent<br>Best-funded challenger<br>Niche pick</p>
+<h2 style="position:absolute;left:860px;top:591px;width:200px;font-size:24px;font-weight:800;line-height:1.1;text-align:center;color:#1B365D">DEVOPS<br>LIFECYCLE</h2>
+<p style="position:absolute;left:848px;top:446px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">1</p>
+<p style="position:absolute;left:848px;top:472px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">PLAN</p>
+<p style="position:absolute;left:761px;top:533px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">2</p>
+<p style="position:absolute;left:761px;top:559px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">CODE</p>
+<p style="position:absolute;left:761px;top:646px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">3</p>
+<p style="position:absolute;left:761px;top:672px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">BUILD /<br>REVIEW</p>
+<p style="position:absolute;left:848px;top:744px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">4</p>
+<p style="position:absolute;left:848px;top:770px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">TEST</p>
+<p style="position:absolute;left:987px;top:742px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">5</p>
+<p style="position:absolute;left:987px;top:768px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">RELEASE</p>
+<p style="position:absolute;left:1059px;top:657px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">6</p>
+<p style="position:absolute;left:1059px;top:683px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">DEPLOY</p>
+<p style="position:absolute;left:1059px;top:533px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">7</p>
+<p style="position:absolute;left:1059px;top:559px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">OPERATE</p>
+<p style="position:absolute;left:962px;top:434px;width:100px;font-size:24px;font-weight:800;line-height:1;text-align:center;color:#FBFCFD">8</p>
+<p style="position:absolute;left:962px;top:460px;width:100px;font-family:'Oswald', Arial, sans-serif;font-size:20px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#FBFCFD">MONITOR</p>
+<p style="position:absolute;left:760px;top:876px;width:160px;font-family:'Oswald', Arial, sans-serif;font-size:30px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#5B57C2">DEV</p>
+<p style="position:absolute;left:760px;top:912px;width:160px;font-size:20px;font-weight:600;line-height:1.2;text-align:center;color:#5A6472">Stages 1–4</p>
+<p style="position:absolute;left:1000px;top:876px;width:160px;font-family:'Oswald', Arial, sans-serif;font-size:30px;font-weight:600;line-height:1.1;letter-spacing:1px;text-align:center;color:#23803A">OPS</p>
+<p style="position:absolute;left:1000px;top:912px;width:160px;font-size:20px;font-weight:600;line-height:1.2;text-align:center;color:#5A6472">Stages 5–8</p>
+<div style="position:absolute;left:64px;top:212px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #7E57C2;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">1</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">PLAN</h3>
-<x-icon name="Lightbulb" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#7E57C2;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">1</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#7E57C2">PLAN</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Tickets become specs that agents execute</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">Atlassian Rovo<br>AWS Kiro<br>Tessl</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/77d28832834dfbdefb60f8d08a424bbf" alt="Atlassian logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Atlassian</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Jira + Rovo agents, issue to PR</p>
+<img src="/_blob/1ba14d11fd278a1cfea705e467ce5301" alt="Kiro logo" style="width:36px;height:36px;object-fit:contain;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">AWS Kiro</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Spec-driven agentic IDE</p>
+<img src="/_blob/5dfcd365e911100aad84dcbe11d84810" alt="Tessl logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Tessl</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Spec-as-source dev platform</p>
 </div>
-<div style="position:absolute;left:588px;top:320px;width:328px;height:192px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:64px;top:419px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #44479E;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">2</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">CODE</h3>
-<x-icon name="Code" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#44479E;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">2</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#44479E">CODE</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Autocomplete gives way to parallel agents</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">GitHub Copilot<br>Anthropic Claude Code<br>Factory</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/644a9c97bae71de7bf03cbfddd3029c2" alt="GitHub Copilot logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">GitHub Copilot</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Issue-to-PR agent + Agent HQ</p>
+<img src="/_blob/4a00dfa7808eaf1506239b9b7058bc02" alt="Claude Code logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Claude Code</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Agent for whole coding tasks</p>
+<img src="/_blob/45cac30ce608fb1763793dab7f5091b6" alt="Factory logo" style="width:36px;height:36px;object-fit:contain;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Factory</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Droid agents, IDE to CI/CD</p>
 </div>
-<div style="position:absolute;left:1032px;top:338px;width:348px;height:176px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:64px;top:626px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #1E3A64;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">3</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">BUILD / REVIEW</h3>
-<x-icon name="Search" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#1E3A64;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">3</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#1E3A64">BUILD / REVIEW</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">AI tackles the review bottleneck</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">Copilot code review<br>CodeRabbit<br>Graphite (Cursor)</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/644a9c97bae71de7bf03cbfddd3029c2" alt="GitHub Copilot logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">GitHub Copilot</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Built-in first-pass AI PR review</p>
+<img src="/_blob/0b106af80891832165c8125f0f2d1f0e" alt="CodeRabbit logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">CodeRabbit</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">AI review layer on 4 Git hosts</p>
+<img src="/_blob/242b4759a8461edb0052006b2bc69768" alt="Graphite logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Graphite</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Stacked PRs + AI review (Cursor)</p>
 </div>
-<div style="position:absolute;left:1428px;top:490px;width:288px;height:132px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:64px;top:833px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #0A68AE;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">4</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">TEST</h3>
-<x-icon name="CheckCircle" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#0A68AE;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">4</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#0A68AE">TEST</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Scripted suites give way to autonomous testing</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">Tricentis<br>QA Wolf<br>Momentic</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/32800362c697718f0bca1c7cccb732b4" alt="Tricentis logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Tricentis</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Agentic QE on Tosca and Testim</p>
+<img src="/_blob/b515bfafd1be3595255ab2ee3b1ba61c" alt="QA Wolf logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">QA Wolf</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">AI E2E coverage-as-a-service</p>
+<img src="/_blob/2d5e6028fff01bd44c465a4bf0b605d3" alt="Momentic logo" style="width:36px;height:36px;object-fit:contain;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Momentic</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Plain-language E2E tests</p>
 </div>
-<div style="position:absolute;left:1404px;top:706px;width:284px;height:128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:1224px;top:212px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #557A16;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">5</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">RELEASE</h3>
-<x-icon name="PaperPlane" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#557A16;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">8</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#557A16">MONITOR</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Product, LLM and eng telemetry converge</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">LaunchDarkly<br>ServiceNow<br>Octopus Deploy</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/603ed1c29407b35dc8dd2e1895d262a6" alt="PostHog logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">PostHog*</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">LLM evals + product analytics</p>
+<img src="/_blob/92e26ef88cc2e79cdbc7cbe9d47fd7d4" alt="Dynatrace logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Dynatrace</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Agentic ops on Davis causal AI</p>
+<img src="/_blob/b2f713739ef59570ab9caf3655c9a020" alt="Braintrust logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Braintrust</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Evals gate prompt/model changes</p>
 </div>
-<div style="position:absolute;left:1004px;top:802px;width:340px;height:184px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:1224px;top:419px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #2C7230;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">6</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">DEPLOY</h3>
-<x-icon name="Cloud" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#2C7230;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">7</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#2C7230">OPERATE</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Agents triage first; on-call supervises</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">GitLab Duo<br>Harness<br>Pulumi</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/d520d7e192b292ebfe7d32edc989a018" alt="AWS logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">AWS</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">DevOps Agent: AI on-call</p>
+<img src="/_blob/d605e97367fabac79c4bfeb190db8ecd" alt="Resolve AI logo" style="width:36px;height:36px;object-fit:contain;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Resolve AI</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Autonomous SRE, triage to fix</p>
+<img src="/_blob/fa47d81361f1b22bffa81dc9a8ef9075" alt="Traversal logo" style="width:36px;height:36px;object-fit:contain;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Traversal</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Read-only causal-ML AI SRE</p>
 </div>
-<div style="position:absolute;left:540px;top:792px;width:344px;height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:1224px;top:626px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #0A5E44;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">7</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">OPERATE</h3>
-<x-icon name="Wrench" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#0A5E44;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">6</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#0A5E44">DEPLOY</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Pipelines and infra from plain language</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">AWS DevOps Agent<br>Resolve AI<br>Traversal</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/bc181f8fd85826ac2b4b78de3c77f45b" alt="GitLab logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">GitLab</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Duo Agent Platform for CI/CD</p>
+<img src="/_blob/c05b71e77bed737b1b7bed246403846c" alt="Harness logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Harness</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">AI DevOps Agent builds pipelines</p>
+<img src="/_blob/758ab75606eb7cc81a539200b75e5228" alt="Pulumi logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Pulumi</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Neo agent runs infra changes</p>
 </div>
-<div style="position:absolute;left:196px;top:688px;width:296px;height:128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px">
+</div>
+<div style="position:absolute;left:1224px;top:833px;width:632px;height:195px;background:#FDFDFE;border-left:8px solid #0B7F86;border-radius:6px;box-shadow:0px 1px 4px rgba(20,32,54,0.14);padding:14px 18px;display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;flex-direction:row;align-items:center;gap:10px">
-<div style="width:36px;height:36px;border-radius:50%;background:rgba(8,18,40,0.32);display:flex;align-items:center;justify-content:center"><p style="font-size:24px;font-weight:700;line-height:1;color:#FBFCFD">8</p></div>
-<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:34px;font-weight:600;line-height:1.1;letter-spacing:1px;color:#FBFCFD">MONITOR</h3>
-<x-icon name="Activity" style="color:#FBFCFD;width:32px;height:32px"></x-icon>
+<p style="width:30px;height:30px;border-radius:50%;background:#0B7F86;font-size:20px;font-weight:700;line-height:30px;text-align:center;color:#FBFCFD">5</p>
+<h3 style="font-family:'Oswald', Arial, sans-serif;font-size:26px;font-weight:600;line-height:1.15;letter-spacing:1px;white-space:nowrap;color:#0B7F86">RELEASE</h3>
+<p style="font-size:20px;font-style:italic;line-height:1.2;color:#4A5568">Approvals become automated checks</p>
 </div>
-<p style="font-size:24px;font-weight:600;line-height:1.2;text-align:center;color:#FBFCFD">PostHog*<br>Dynatrace<br>Braintrust</p>
+<div style="display:grid;grid-template-columns:36px 176px 1fr;gap:8px;align-items:center">
+<img src="/_blob/03a87b19eb86d89ba7fa19b854a1cf19" alt="LaunchDarkly logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">LaunchDarkly</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">Guarded releases, auto-rollback</p>
+<img src="/_blob/ba0d5adbf056e5119bbe9c7cb4fb4fd4" alt="ServiceNow logo" style="width:36px;height:36px;object-fit:contain;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">ServiceNow</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">AI change risk assessments</p>
+<img src="/_blob/29817aa71f21a465be79e24148efa313" alt="Octopus Deploy logo" style="width:36px;height:36px;object-fit:contain;background:#FFFFFF;border:1px solid #E1E6ED;border-radius:8px">
+<p style="font-size:20px;font-weight:700;line-height:1.2;white-space:nowrap;color:#1B365D">Octopus Deploy</p>
+<p style="font-size:20px;line-height:1.2;color:#4A5568">AI root cause for failed deploys</p>
 </div>
-<p style="position:absolute;left:64px;top:973px;width:500px;font-size:24px;font-weight:400;line-height:1.2;color:#5A6472">*Incumbent in its niche<br>Source: company, press and<br>analyst reports, as of Oct 12, 2026</p>
-<aside>How to read it: the eight DevOps stages run clockwise from Plan, with Dev (stages 1–4) across the top and Ops (stages 5–8) across the bottom, looping from Monitor back to Plan. Each stage lists the platform incumbent, the best-funded challenger and a niche pick, in that order.
+</div>
+<p style="position:absolute;left:64px;top:1040px;width:1792px;font-size:20px;font-weight:400;line-height:1.2;color:#5A6472">*Incumbent in its niche. Logos are trademarks of their respective owners. Source: company, press and analyst reports, as of Oct 12, 2026</p>
+<aside>How to read it: the eight DevOps stages run down the left side (Dev, stages 1–4) and back up the right side (Ops, stages 5–8), looping from Monitor to Plan. Each card gives what AI is changing at that stage, then the platform incumbent, the best-funded challenger and a niche pick, in that order.
 
 1 Plan. Shift: from tickets written for humans to specs and goals that agents execute. Atlassian: Rovo Dev Agents turn Jira issues into code plans, code and PR reviews. AWS Kiro: spec-driven agentic IDE, GA in 2026 as the replacement for Amazon Q Developer. Tessl: spec-as-source platform; $125M raised at a reported ~$750M valuation.
 
