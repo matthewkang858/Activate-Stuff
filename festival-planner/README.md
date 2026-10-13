@@ -45,13 +45,15 @@ keeps a Friday–Sunday festival on Friday–Sunday. These show a **projected** 
 1. Sign up at [dashboard.liteapi.travel](https://dashboard.liteapi.travel/register) and copy the sandbox key
    (it starts with `sand_`).
 2. Put it in `.env` as `LITEAPI_API_KEY=...` and restart.
-3. Run `npm run check:liteapi` once. It prices one hotel for 1 night and for 3 nights to confirm that LiteAPI's
-   offer price covers the whole stay, which is what the app assumes. LiteAPI's docs don't say either way.
+3. Optionally run `npm run check:liteapi`. It prices one hotel for 1 night and for 3 nights to confirm that
+   LiteAPI's offer price covers the whole stay, which is what the app assumes; LiteAPI's docs don't say either
+   way. Checked with a sandbox key in October 2026: 3 nights came to 2.4× one night, so prices are for the stay.
 
 How it searches ([`src/providers/liteapi.js`](src/providers/liteapi.js)): one `POST /v3.0/hotels/rates` around
 the festival's coordinates, splitting your group across the rooms you asked for, pricing up to 1,000 hotels and
-taking the cheapest. If nothing comes back within 15 km it tries 40 km, then falls back to the estimate. A festival
-that has already started is priced from today. Sandbox keys may return test
+taking the cheapest. If nothing comes back within 15 km it tries 40 km, then falls back to the estimate. LiteAPI
+treats the radius loosely, so the card gives the chosen hotel's actual distance from the venue. A festival that
+has already started is priced from today. Sandbox keys may return test
 prices; the card says "Sandbox test price" when they do. If they turn out to be test data, switch to a production key.
 Hotel prices also work for projected dates, as a preview.
 

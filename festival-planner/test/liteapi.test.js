@@ -25,7 +25,8 @@ const ratesResponse = ({ sandbox = false } = {}) => ({
   hotels: [
     { id: 'lp1', name: 'Desert Inn' },
     { id: 'lp2', name: 'Resort With Fees' },
-    { id: 'lp3', name: 'Polo Suites' },
+    // About 3.8 km north of the stay's venue below.
+    { id: 'lp3', name: 'Polo Suites', city_name: 'Indio', latitude: 33.7165, longitude: -116.2378 },
   ],
   sandbox,
 });
@@ -91,13 +92,19 @@ test('cheapestOffer adds the fees for every room in a multi-room offer', () => {
     }],
   };
   assert.deepEqual(cheapestOffer(response, 'USD'), {
-    total: 580, fees: 180, hotelId: 'lpR', hotelName: null, sandbox: false,
+    total: 580, fees: 180, hotelId: 'lpR', hotelName: null, hotelCity: null, hotelLocation: null, sandbox: false,
   });
 });
 
 test('cheapestOffer counts fees paid at the hotel and ignores other currencies', () => {
   assert.deepEqual(cheapestOffer(ratesResponse(), 'USD'), {
-    total: 575.25, fees: 0, hotelId: 'lp3', hotelName: 'Polo Suites', sandbox: false,
+    total: 575.25,
+    fees: 0,
+    hotelId: 'lp3',
+    hotelName: 'Polo Suites',
+    hotelCity: 'Indio',
+    hotelLocation: { lat: 33.7165, lon: -116.2378 },
+    sandbox: false,
   });
   assert.equal(cheapestOffer({ data: [] }, 'USD'), null);
   assert.equal(cheapestOffer({}, 'USD'), null);
@@ -140,7 +147,7 @@ test('cheapestStay prices the whole stay and reports a nightly rate per room', a
     source: 'liteapi',
     hotelName: 'Polo Suites',
     sandbox: true,
-    note: 'Cheapest room at Polo Suites (within 15 km). Sandbox test price.',
+    note: 'Cheapest room: Polo Suites, Indio, 4 km from the venue. Sandbox test price.',
   });
 });
 
@@ -149,7 +156,8 @@ test("cheapestStay prices LiteAPI's documented example response", async () => {
   const quote = await createLiteApiHotels({ apiKey: 'k', fetchImpl }).cheapestStay({ ...stay, adults: 2, rooms: 1 });
   assert.equal(quote.total, 207);
   assert.equal(quote.nightly, 69);
-  assert.equal(quote.note, 'Cheapest room at Hotel Example NYC (within 15 km), incl. $44 paid at the hotel. Sandbox test price.');
+  // The spec example has no hotel coordinates, so the note falls back to the search radius.
+  assert.equal(quote.note, 'Cheapest room: Hotel Example NYC (searched within 15 km), incl. $44 paid at the hotel. Sandbox test price.');
 });
 
 test('cheapestStay widens the search when nothing is available nearby', async () => {
@@ -168,7 +176,7 @@ test('cheapestStay widens the search when nothing is available nearby', async ()
 
   assert.deepEqual(radii, [10000, 30000, 60000]);
   assert.equal(quote.total, 630);
-  assert.equal(quote.note, 'Cheapest room found (within 60 km), incl. $90 paid at the hotel.');
+  assert.equal(quote.note, 'Cheapest room found within about 60 km, incl. $90 paid at the hotel.');
 });
 
 test('cheapestStay returns null when no radius has rooms', async () => {

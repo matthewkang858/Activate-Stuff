@@ -8,6 +8,8 @@
 // treated as the price of the whole stay; `npm run check:liteapi` confirms that
 // against a real key.
 
+import { distanceMiles } from '../geo.js';
+
 const BASE_URL = 'https://api.liteapi.travel/v3.0';
 
 // Searched in order until one finds rooms: near the venue, then the wider area
@@ -66,7 +68,7 @@ const feesPaidAtHotel = (roomType, currency) => (roomType.rates ?? [])
 
 // Finds the cheapest offer, counting fees paid at the hotel, in a rates response.
 export function cheapestOffer(response, currency) {
-  const names = new Map((response?.hotels ?? []).map((h) => [h.id, h.name]));
+  const hotels = new Map((response?.hotels ?? []).map((h) => [h.id, h]));
 
   let best = null;
   for (const hotel of response?.data ?? []) {
@@ -74,12 +76,33 @@ export function cheapestOffer(response, currency) {
       const price = amountIn(roomType.offerRetailRate, currency);
       if (price == null) continue;
       const fees = feesPaidAtHotel(roomType, currency);
-      if (!best || price + fees < best.total) {
-        best = { total: price + fees, fees, hotelId: hotel.hotelId, hotelName: names.get(hotel.hotelId) ?? null };
-      }
+      if (!best || price + fees < best.total) best = { total: price + fees, fees, hotelId: hotel.hotelId };
     }
   }
-  return best && { ...best, sandbox: response.sandbox === true };
+  if (!best) return null;
+
+  const info = hotels.get(best.hotelId);
+  return {
+    ...best,
+    hotelName: info?.name ?? null,
+    hotelCity: info?.city_name ?? null,
+    hotelLocation: Number.isFinite(info?.latitude) && Number.isFinite(info?.longitude)
+      ? { lat: info.latitude, lon: info.longitude }
+      : null,
+    sandbox: response.sandbox === true,
+  };
+}
+
+const KM_PER_MILE = 1.609;
+
+// LiteAPI's search radius is approximate (hotels a few km past it come back),
+// so describe the hotel by its real distance from the venue when known.
+function describeHotel(offer, venue, radiusMeters) {
+  if (!offer.hotelName) return `Cheapest room found within about ${radiusMeters / 1000} km`;
+  const where = offer.hotelCity ? `${offer.hotelName}, ${offer.hotelCity}` : offer.hotelName;
+  if (!offer.hotelLocation) return `Cheapest room: ${where} (searched within ${radiusMeters / 1000} km)`;
+  const km = Math.max(1, Math.round(distanceMiles(venue, offer.hotelLocation) * KM_PER_MILE));
+  return `Cheapest room: ${where}, ${km} km from the venue`;
 }
 
 // POST /hotels/rates. Resolves to null when nothing is available (HTTP 204 or
@@ -133,7 +156,6 @@ export function createLiteApiHotels({
 
         const total = Math.round(offer.total);
         const roomCount = occupancies.length;
-        const where = offer.hotelName ? `at ${offer.hotelName}` : 'found';
         const fees = offer.fees > 0 ? `, incl. $${Math.round(offer.fees)} paid at the hotel` : '';
         return {
           nights,
@@ -143,7 +165,7 @@ export function createLiteApiHotels({
           source: 'liteapi',
           hotelName: offer.hotelName,
           sandbox: offer.sandbox,
-          note: `Cheapest room ${where} (within ${radiusMeters / 1000} km)${fees}.`
+          note: `${describeHotel(offer, { lat, lon }, radiusMeters)}${fees}.`
             + (offer.sandbox ? ' Sandbox test price.' : ''),
         };
       }
