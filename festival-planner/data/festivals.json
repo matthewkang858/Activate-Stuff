@@ -1,0 +1,2598 @@
+[
+  {
+    "id": "all-things-go",
+    "name": "All Things Go Music Festival (Maryland)",
+    "city": "Columbia",
+    "state": "MD",
+    "venue": "Merriweather Post Pavilion",
+    "genres": [
+      "indie",
+      "pop",
+      "alternative"
+    ],
+    "website": "https://www.allthingsgofestival.com",
+    "camping": false,
+    "airports": [
+      "BWI",
+      "DCA",
+      "IAD"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-25",
+        "end": "2026-09-27",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://news.pollstar.com/2026/05/04/all-things-go-d-c-hayley-williams-mitski-brandi-carlile-lola-young-muna-zara-larsson-ethel-cain-top-the-bill/",
+      "https://northernvirginiamag.com/news/2026/05/06/all-things-go-music-festival-announces-star-studded-lineup/",
+      "https://www.fox5dc.com/news/all-things-go-festival-2026-hayley-williams-mitski-headline-columbia-md-show"
+    ],
+    "dataNotes": "The festival expanded to three days in 2026, headlined by Mitski, Ethel Cain, Hayley Williams, Brandi Carlile and Lola Young. Only a low-quality statistics site gave a price ($349 for a 3-day GA lawn pass), so gaFrom is null. There is also a separate New York edition, not covered here. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "acl-fest",
+    "name": "Austin City Limits Music Festival",
+    "city": "Austin",
+    "state": "TX",
+    "venue": "Zilker Park",
+    "genres": [
+      "eclectic",
+      "pop",
+      "indie",
+      "alternative"
+    ],
+    "website": "https://www.aclfestival.com",
+    "camping": false,
+    "airports": [
+      "AUS"
+    ],
+    "ticket": {
+      "gaFrom": 365,
+      "note": "3-day GA, one weekend",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-10-02",
+        "end": "2026-10-04",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2026,
+        "start": "2026-10-09",
+        "end": "2026-10-11",
+        "label": "Weekend 2"
+      }
+    ],
+    "sources": [
+      "https://kxt.org/?p=182726",
+      "https://aclfest-weekend1.frontgatetickets.com/event/zkoy0m78nfprlpoo",
+      "https://tribeza.com/events/austin-city-limits-music-festival-2026/",
+      "https://houston.culturemap.com/news/entertainment/acl-fest-2026-tickets-presale/"
+    ],
+    "dataNotes": "Ticket: 3-day GA (one weekend), price on the official Front Gate Weekend One listing, before fees This was the 25th anniversary edition. KXT said tiers ranged from $365 to $5,670. A Dec 2025 presale report cited 3-day GA 'starting at $325', which I could not confirm, so the true cheapest tier may be lower. Weekend 1 GA reportedly sold out. Weekend 2 ended Oct 11; I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "beachlife-festival",
+    "name": "BeachLife Festival",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "venue": "Seaside Lagoon",
+    "genres": [
+      "rock",
+      "alternative",
+      "reggae",
+      "pop"
+    ],
+    "website": "https://www.beachlifefestival.com",
+    "camping": false,
+    "airports": [
+      "LAX",
+      "LGB",
+      "SNA"
+    ],
+    "ticket": {
+      "gaFrom": 409,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-01",
+        "end": "2026-05-03",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://music.mxdwn.com/2026/01/17/news/beachlife-festival-2026-lineup-announced-featuring-duran-duran-my-morning-jacket-james-taylor-more/",
+      "https://showbams.com/tag/the-offspring/"
+    ],
+    "dataNotes": "Ticket: 3-day GA (GA+ $524; single-day GA $169) 2026 headliners: Duran Duran, The Offspring, James Taylor, The Chainsmokers, Slightly Stoopid. The $409 price comes from one secondary site (Showbams), whose article is undated, and was not checked against the official site. Marked held because the dates have passed."
+  },
+  {
+    "id": "beyond-wonderland-socal",
+    "name": "Beyond Wonderland SoCal",
+    "city": "San Bernardino",
+    "state": "CA",
+    "venue": "NOS Events Center",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://socal.beyondwonderland.com",
+    "camping": false,
+    "airports": [
+      "ONT",
+      "LAX"
+    ],
+    "ticket": {
+      "gaFrom": 179.98,
+      "note": "2-day GA, early tier",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-27",
+        "end": "2026-03-28",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-03-26",
+        "end": "2027-03-27",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://edm.com/events/beyond-wonderland-socal-lineup-2026/",
+      "https://press.insomniac.com/blog/beyond-wonderland-socal-announces-full-lineup-for-2026-edition-at-nos-event-center",
+      "https://press.insomniac.com/blog/beyond-wonderland-announces-2027-festival-with-limited-pre-sale",
+      "https://www.edmtunes.com/2026/04/beyond-wonderland-socal-announces-2027-return-with-9-99-pre-sale/amp/"
+    ],
+    "dataNotes": "Ticket: 2-day GA, early 'Wonder Sale' tier as reported Insomniac said the 2026 edition sold out. The $179.98 early-sale GA price is reported by secondary coverage and was not checked against the official ticket page. Insomniac announced the 2027 edition on Mar 31, 2026 with passes on sale. Mar 26-27, 2027 appears in EDMTunes and festival listings, but I could not read the Insomniac release text to confirm the dates."
+  },
+  {
+    "id": "bonnaroo",
+    "name": "Bonnaroo Music & Arts Festival",
+    "city": "Manchester",
+    "state": "TN",
+    "venue": "Great Stage Park",
+    "genres": [
+      "eclectic",
+      "rock",
+      "hip-hop",
+      "electronic"
+    ],
+    "website": "https://www.bonnaroo.com",
+    "camping": true,
+    "airports": [
+      "BNA",
+      "CHA"
+    ],
+    "ticket": {
+      "gaFrom": 389,
+      "note": "4-day GA, starting tier",
+      "year": 2026
+    },
+    "status": "hiatus",
+    "statusNote": "Taking 2027 off; organizers plan to return in 2028.",
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-11",
+        "end": "2026-06-14",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.thefader.com/2025/12/02/bonnaroo-2026-lineup-dates-how-to-buy-tickets",
+      "https://news.livenationentertainment.com/news/bonnaroo-music-arts-festival-announces-2026-lineup",
+      "https://stereogum.com/2509115/bonnaroo-taking-a-much-needed-year-off-in-2027/news",
+      "https://wreg.com/news/bonnaroo-taking-much-needed-year-off-in-2027/amp/"
+    ],
+    "dataNotes": "Ticket: 4-day GA, starting tier at the Dec 5, 2025 on-sale (The Fader); later tiers $425+; fee treatment not verified On Aug 21, 2026, organizers said Bonnaroo will take 2027 off so the grounds can recover after storms, and Stereogum reports a planned 2028 return. There will be NO 2027 edition (dates2027 is null for that reason). I did not verify whether the 2026 edition ran all four days without weather interruptions."
+  },
+  {
+    "id": "boston-calling",
+    "name": "Boston Calling Music Festival",
+    "city": "Boston",
+    "state": "MA",
+    "venue": "Harvard Athletic Complex (Allston)",
+    "genres": [
+      "rock",
+      "alternative",
+      "indie",
+      "pop"
+    ],
+    "website": "https://bostoncalling.com",
+    "camping": false,
+    "airports": [
+      "BOS",
+      "PVD",
+      "MHT"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": "Skipped 2026; returns June 4–6, 2027.",
+    "editions": [
+      {
+        "year": 2027,
+        "start": "2027-06-04",
+        "end": "2027-06-06",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.wbur.org/news/2025/06/20/no-2026-boston-calling",
+      "https://vanyaland.com/2025/06/20/boston-calling-to-take-a-short-break-and-return-in-2027/",
+      "https://consequence.net/2025/06/boston-calling-to-take-gap-year-in-2026"
+    ],
+    "dataNotes": "In June 2025 organizers announced a gap year for 2026 and a 2027 return on June 4-6, 2027. That is a move away from Memorial Day weekend, and the festival stays at the Harvard Athletic Complex. The 2027 dates come from June 2025 coverage; I found no newer update. No 2027 lineup or ticket prices found."
+  },
+  {
+    "id": "bottlerock-napa-valley",
+    "name": "BottleRock Napa Valley",
+    "city": "Napa",
+    "state": "CA",
+    "venue": "Napa Valley Expo",
+    "genres": [
+      "rock",
+      "pop",
+      "eclectic"
+    ],
+    "website": "https://www.bottlerocknapavalley.com",
+    "camping": false,
+    "airports": [
+      "OAK",
+      "SFO",
+      "STS"
+    ],
+    "ticket": {
+      "gaFrom": 475,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-22",
+        "end": "2026-05-24",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://napavalleyregister.com/arts-and-entertainment/bottlerock-2026-daily-lineup/article_2a41d78d-2980-4a7c-802c-62cf613de482.html",
+      "https://liveforlivemusic.com/news/bottlerock-napa-valley-2026-lineup",
+      "https://digital-release.kron4.com/news/bay-area/bottlerock-2026-lineup-announced-with-foo-fighters-backstreet-boys-and-lorde-to-headline/amp"
+    ],
+    "dataNotes": "Ticket: 3-day GA as reported at the Jan 2026 on-sale; may include fees 2026 headliners: Foo Fighters, Backstreet Boys, Lorde, LCD Soundsystem. Reports give $475 for 3-day GA and $252 all-in for single-day GA; it is unclear whether $475 includes fees. I found no post-event report, but also no cancellation report. 2027 dates (May 28-30) appear only on third-party listings and were not confirmed as official, so they are left null."
+  },
+  {
+    "id": "bumbershoot",
+    "name": "Bumbershoot",
+    "city": "Seattle",
+    "state": "WA",
+    "venue": "Seattle Center",
+    "genres": [
+      "indie",
+      "rock",
+      "alternative",
+      "eclectic"
+    ],
+    "website": "https://bumbershoot.com",
+    "camping": false,
+    "airports": [
+      "SEA",
+      "PAE"
+    ],
+    "ticket": {
+      "gaFrom": 125.5,
+      "note": "2-day GA, no added fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-05",
+        "end": "2026-09-06",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.yakimaherald.com/news/nation_and_world/entertainment/bumbershoot-2026-ticket-prices-new-reentry-option-announced/article_6eb6fb05-b960-5479-8e05-24b453b7f108.html",
+      "https://www.yakimaherald.com/news/nation_and_world/entertainment/bumbershoot-announces-2026-lineup-death-cab-for-cutie-headlines/article_88859be2-734a-5837-b593-b3062d8dcefb.html",
+      "https://komonews.com/seattle-refined/bumbershoot-2026-lineup-death-cab-for-cutie-turnstile-japanese-breakfast-orville-peck-de-la-soul-travis-thompson-oble-reed-seattle-center-space-needle-music-festival-pnw-summer"
+    ],
+    "dataNotes": "Ticket: 2-day GA weekend pass, no added ticket fees (1-day $70.50) Labor Day weekend. Headliners: Death Cab for Cutie, Turnstile. Re-entry was an optional add-on ($30 on a weekend pass), and children 12 and under got in free. Marked held because the dates have passed."
+  },
+  {
+    "id": "camp-flog-gnaw",
+    "name": "Camp Flog Gnaw Carnival",
+    "city": "Los Angeles",
+    "state": "CA",
+    "venue": "Dodger Stadium",
+    "genres": [
+      "hip-hop",
+      "rnb",
+      "indie"
+    ],
+    "website": "https://www.campfloggnaw.com",
+    "camping": false,
+    "airports": [
+      "BUR",
+      "LAX",
+      "LGB"
+    ],
+    "ticket": {
+      "gaFrom": 395,
+      "note": "2-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-11-14",
+        "end": "2026-11-15",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://news.pollstar.com/2026/06/11/camp-flog-gnaw-sets-2026-dates/",
+      "https://www.complex.com/music/a/cmplxtara-mahadevan/camp-flog-gnaw-2026-festival",
+      "https://routenote.com/radar/camp-flog-gnaw-2026-lineup-tyler-the-creator-future-steve-lacy-and-more/"
+    ],
+    "dataNotes": "Ticket: 2-day GA Tyler, the Creator's festival. The 2026 lineup includes Tyler, Future, Turnstile and Steve Lacy. An Aug 2026 industry listing says it is sold out with a waitlist."
+  },
+  {
+    "id": "carolina-country-music-fest",
+    "name": "Carolina Country Music Fest",
+    "city": "Myrtle Beach",
+    "state": "SC",
+    "venue": "Burroughs & Chapin Pavilion Place",
+    "genres": [
+      "country"
+    ],
+    "website": "https://carolinacountrymusicfest.com",
+    "camping": false,
+    "airports": [
+      "MYR",
+      "ILM",
+      "CHS"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-04",
+        "end": "2026-06-07",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.whiskeyriff.com/2026/02/27/carolina-country-music-festival-unveils-jam-packed-2026-lineup-featuring-post-malone-riley-green-many-more/",
+      "https://www.wmbfnews.com/2025/08/14/carolina-country-music-fest-tickets-go-sale-friday",
+      "https://carolinacountrymusicfest.com/news/2026-here-we-come"
+    ],
+    "dataNotes": "The 4-day festival (Thu-Sun) was headlined by Post Malone, Blake Shelton, Luke Bryan and Riley Green. The official site advertised '$79 a day' for a 3-day GA ticket before taxes and fees; the 4-day GA face price was not verified, so gaFrom is null. A resale listing shows June 10, 2027, which is not official, so dates2027 is null. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "cma-fest",
+    "name": "CMA Fest",
+    "city": "Nashville",
+    "state": "TN",
+    "venue": "Nissan Stadium (nightly concerts) and downtown Nashville stages",
+    "genres": [
+      "country"
+    ],
+    "website": "https://cmafest.com",
+    "camping": false,
+    "airports": [
+      "BNA"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-04",
+        "end": "2026-06-07",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-06-10",
+        "end": "2027-06-13",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://cmafest.com/passes-tickets/",
+      "https://www.wsmv.com/2026/02/25/cma-fest-announces-headliners-2026-event-nashville/",
+      "https://holler.country/news/breaking/heres-all-the-presale-information-you-need-for-cma-fest-presented-by-sofi-2027/",
+      "https://americansongwriter.com/cma-fest-unveils-2026-lineup-with-hundreds-of-artists-set-to-perform/"
+    ],
+    "dataNotes": "The official four-night stadium pass price was not verified; American Songwriter reported $250-$1,100 depending on seat, without a source. Single-night stadium tickets started at $70 (official site). Many daytime stages are free, and Fan Fair X cost $31.05 for 4 days including fees. The 2027 dates come from Holler's presale coverage (the SeatGeek presale for 2027 four-night passes began Aug 13, 2026)."
+  },
+  {
+    "id": "coachella",
+    "name": "Coachella Valley Music and Arts Festival",
+    "city": "Indio",
+    "state": "CA",
+    "venue": "Empire Polo Club",
+    "genres": [
+      "eclectic",
+      "pop",
+      "indie",
+      "electronic"
+    ],
+    "website": "https://www.coachella.com",
+    "camping": true,
+    "airports": [
+      "PSP",
+      "ONT",
+      "LAX"
+    ],
+    "ticket": {
+      "gaFrom": 549,
+      "note": "3-day GA, starting tier",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-10",
+        "end": "2026-04-12",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2026,
+        "start": "2026-04-17",
+        "end": "2026-04-19",
+        "label": "Weekend 2"
+      },
+      {
+        "year": 2027,
+        "start": "2027-04-09",
+        "end": "2027-04-11",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2027,
+        "start": "2027-04-16",
+        "end": "2027-04-18",
+        "label": "Weekend 2"
+      }
+    ],
+    "sources": [
+      "https://www.recorderonline.com/features/entertainment_news/coachella-2026-everything-you-need-to-know-to-survive-and-thrive-at-the-festival-or/article_c7b48907-23fd-52ce-8663-e163c594a095.html",
+      "https://thefortyfive.com/news/coachella-2026-headliners-lineup-tickets/",
+      "https://www.timeout.com/los-angeles/news/coachella-2026-lineup-includes-sabrina-carpenter-justin-bieber-karol-g-and-anyma-091625",
+      "https://www.comingsoon.net/?p=1966558",
+      "https://www.nme.com/news/music/coachella-announce-dates-for-2027-and-how-to-get-tickets-3941844",
+      "https://www.nbcpalmsprings.com/2026/04/20/advance-passes-for-2027-coachella-festival-go-on-sale-may-1",
+      "https://concerts.consequence.net/articles/coachella-2027-dates-how-to-get-tickets"
+    ],
+    "dataNotes": "Ticket: 3-day GA, Weekend 2, starting tier (Weekend 1 started at $649); advertised price Sources disagree on whether the $549 includes fees: Time Out describes $649 (W1) / $549 (W2) as fee-inclusive, while ComingSoon lists W2 as $499 + $50 fees. California's all-in pricing law means the advertised $549 probably includes mandatory fees, so the pre-fee base may be about $499. 2027 dates were announced by Goldenvoice. The 2027 advance sale opened May 1, 2026 with GA from $599 (W1) and $549 (W2)."
+  },
+  {
+    "id": "country-thunder-arizona",
+    "name": "Country Thunder Arizona",
+    "city": "Florence",
+    "state": "AZ",
+    "venue": "Canyon Moon Ranch",
+    "genres": [
+      "country"
+    ],
+    "website": "https://www.countrythunder.com/az",
+    "camping": true,
+    "airports": [
+      "PHX",
+      "AZA",
+      "TUS"
+    ],
+    "ticket": {
+      "gaFrom": 300,
+      "note": "4-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-09",
+        "end": "2026-04-12",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.azfamily.com/2025/11/17/lainey-wilson-zach-top-among-headliners-country-thunder-arizona-2026/",
+      "https://ktar.com/arizona-news/2026-country-thunder-lineup",
+      "https://www.phoenixnewtimes.com/music/country-thunder-arizona-2026-guide-40657802/",
+      "https://www.abc15.com/entertainment/events/2026-country-thunder-everything-you-need-to-know-about-the-music-festival-in-florence"
+    ],
+    "dataNotes": "Ticket: 4-day GA, starting price per AZFamily (KTAR cites $360) Headliners: Gavin Adcock, Lainey Wilson, Zach Top, Brooks & Dunn. Phoenix New Times names the site 'AZ Talio Ranch' (20585 E. Water Way); other sources call it Canyon Moon Ranch. The GA price is disputed: AZFamily says from $300, KTAR says $360, likely different tiers, and whether either includes fees is unknown. Extensive on-site camping. I did not search for 2027 dates because the search limit was reached."
+  },
+  {
+    "id": "country-thunder-wisconsin",
+    "name": "Country Thunder Wisconsin",
+    "city": "Twin Lakes",
+    "state": "WI",
+    "venue": "Shadow Hill Ranch",
+    "genres": [
+      "country"
+    ],
+    "website": "https://www.countrythunder.com",
+    "camping": true,
+    "airports": [
+      "MKE",
+      "ORD"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-16",
+        "end": "2026-07-19",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://countrynow.com/country-thunder-wisconsin-drops-a-stacked-2026-lineup-with-keith-urban-riley-green-more/",
+      "https://www.travelwisconsin.com/events/country-thunder-music-festival"
+    ],
+    "dataNotes": "Headliners were Keith Urban, Riley Green, Gavin Adcock and The Red Clay Strays. The official 4-day GA face price was not found; only resale prices (about $342-400) turned up. The festival is known for on-site camping, but 2026 camping details were not verified. I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "crssd-festival",
+    "name": "CRSSD Festival",
+    "city": "San Diego",
+    "state": "CA",
+    "venue": "Waterfront Park",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://www.crssdfest.com",
+    "camping": false,
+    "airports": [
+      "SAN"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-14",
+        "end": "2026-03-15",
+        "label": "Spring"
+      },
+      {
+        "year": 2026,
+        "start": "2026-09-26",
+        "end": "2026-09-27",
+        "label": "Fall"
+      }
+    ],
+    "sources": [
+      "https://www.edmtunes.com/2025/12/crssd-festival-spring-2026-lineup/amp/",
+      "https://www.kpbs.org/events/ongoing/crssd-festival-spring-26",
+      "https://www.sandiego.org/events-festivals/crssd-festival-fall",
+      "https://edmidentity.com/2026/09/20/crssd-festival-fall-2026-set-times/"
+    ],
+    "dataNotes": "21+. Spring headliners included Cirez D, Amelie Lens, Dom Dolla and Lane 8. Fall headliners included Chris Lake b2b Disclosure and Mochakk. I could not find the official 2-day GA price: KPBS gives only a $185-$379 range across ticket types, and the other figures were resale. Both 2026 editions are marked held because the dates have passed."
+  },
+  {
+    "id": "edc-orlando",
+    "name": "EDC Orlando",
+    "city": "Orlando",
+    "state": "FL",
+    "venue": "Tinker Field",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://orlando.edc.com",
+    "camping": false,
+    "airports": [
+      "MCO",
+      "SFB"
+    ],
+    "ticket": {
+      "gaFrom": 219.99,
+      "note": "3-day GA, launch sale",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-11-06",
+        "end": "2026-11-08",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://edmidentity.com/?p=271431",
+      "https://www.fox35orlando.com/news/edc-orlando-2026-lineup-announced-tickets-sale-soon",
+      "https://www.predicthq.com/major-events/top-events/edc-orlando"
+    ],
+    "dataNotes": "Ticket: 3-day GA, 'Future Owl' launch sale (Nov 2025); fee treatment not stated; June 2026 prices ranged $292.99-$616.99 across GA, GA+ and VIP This is the 15th edition, 18+. Headliners include David Guetta, Martin Garrix, Kaskade and Steve Aoki. One third-party guide lists $303.99 all-in for 3-day GA ($276.99 + $27 fees). The EDM Identity link is the article ID that came up for the Future Owl announcement, so the exact URL should be confirmed."
+  },
+  {
+    "id": "edc-las-vegas",
+    "name": "Electric Daisy Carnival Las Vegas",
+    "city": "Las Vegas",
+    "state": "NV",
+    "venue": "Las Vegas Motor Speedway",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://lasvegas.electricdaisycarnival.com",
+    "camping": true,
+    "airports": [
+      "LAS"
+    ],
+    "ticket": {
+      "gaFrom": 469.99,
+      "note": "3-day GA, presale",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-15",
+        "end": "2026-05-17",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-05-14",
+        "end": "2027-05-16",
+        "label": "EDC Dusk (Weekend 1)"
+      },
+      {
+        "year": 2027,
+        "start": "2027-05-21",
+        "end": "2027-05-23",
+        "label": "EDC Dawn (Weekend 2)"
+      }
+    ],
+    "sources": [
+      "https://bravo-www.soapcentral.com/music/edc-las-vegas-2026-presale-dates-lineup-tickets-everything-need-know",
+      "https://edmidentity.com/2026/05/19/edc-las-vegas-2027-two-weekends/",
+      "https://djmag.com/news/edc-las-vegas-expands-12-days-and-two-full-weekends-2027",
+      "https://www.digitalmusicnews.com/2026/05/20/edc-las-vegas-2027/",
+      "https://fox5vegas.com/2026/05/20/edc-las-vegas-announces-dusk-till-dawn-2027-spanning-2-weekends"
+    ],
+    "dataNotes": "Ticket: 3-day GA, Future Owl presale starting price (May 2025) 2026 GA sold out. Sources disagree on the presale price: $469.99 is the most cited starting GA, and another report gives $524.99 as the regular tier. It is unclear whether the figure includes fees. Camp EDC offers on-site camping. For 2027 the festival expands to two weekends ('Dusk Till Dawn'), with single-weekend GA at $399.99 all-in."
+  },
+  {
+    "id": "electric-forest",
+    "name": "Electric Forest",
+    "city": "Rothbury",
+    "state": "MI",
+    "venue": "Double JJ Resort",
+    "genres": [
+      "electronic",
+      "jam"
+    ],
+    "website": "https://electricforest.com",
+    "camping": true,
+    "airports": [
+      "GRR"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-25",
+        "end": "2026-06-28",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://liveforlivemusic.com/news/electric-forest-2026-dates-lineup/",
+      "https://edmidentity.com/2026/06/22/electric-forest-2026-set-times-essential-info-and-maps/",
+      "https://electricforest.com/pass-types"
+    ],
+    "dataNotes": "The 2026 GA price is not verified. The official pass page (2025 edition) listed a GA wristband with GA camping at $600 all-in with no fees. A Dec 2025 Breaking and Entering article cited 'GA from $379', which conflicts with that and was not confirmed. Reports say the 2026 festival sold out. No 2027 dates were found."
+  },
+  {
+    "id": "elements-festival",
+    "name": "Elements Music & Arts Festival",
+    "city": "Long Pond",
+    "state": "PA",
+    "venue": "Pocono Raceway",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://www.elementsfest.com",
+    "camping": true,
+    "airports": [
+      "AVP",
+      "ABE",
+      "EWR"
+    ],
+    "ticket": {
+      "gaFrom": 439.99,
+      "note": "3-day GA, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.phillyvoice.com/elements-music-arts-festival-long-pond-pa-2026/",
+      "https://edmidentity.com/2026/07/30/elements-festival-2026-set-times-maps/"
+    ],
+    "dataNotes": "Ticket: 3-day GA starting price, ALL-IN with fees included (PhillyVoice); the pre-fee price was not verified This was the 9th edition, with a Thursday pre-party on Aug 6 and headliners including Chris Lake, Cloonee, Excision, Porter Robinson and Subtronics. 3-day passes include campground access; single-day tickets do not. Glamping was available, and VIP started at $849.99 all-in. The PhillyVoice piece was produced by its events/marketing arm. One aggregator lists Aug 6-8, 2027, but that is unverified so dates2027 is null. The website URL has not been verified."
+  },
+  {
+    "id": "essence-fest",
+    "name": "ESSENCE Festival of Culture",
+    "city": "New Orleans",
+    "state": "LA",
+    "venue": "Caesars Superdome (evening concerts); Ernest N. Morial Convention Center (daytime)",
+    "genres": [
+      "rnb",
+      "hip-hop"
+    ],
+    "website": "https://www.essence.com/festival",
+    "camping": false,
+    "airports": [
+      "MSY"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-03",
+        "end": "2026-07-05",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.revolt.tv/article/2026-essence-festival-lineup-cardi-b-kehlani-more",
+      "https://www.neworleans.com/things-to-do/festivals/multicultural/the-ultimate-essence-fest-guide/",
+      "https://www.wwoz.org/events/1293876"
+    ],
+    "dataNotes": "Most sources say Jul 3-5, 2026; one Essence.com article said Jul 4-6, which appears to be stale. Daytime convention-center programming is free. Superdome concert seating is reserved, so there is no true GA pass. Listings put 3-day weekend packages at $202.65 (early bird) to $230.40, and NewOrleans.com says 'from $223.50'; the year and fee treatment were not confirmed, so gaFrom is left null. I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "extra-innings-festival",
+    "name": "Extra Innings Festival",
+    "city": "Tempe",
+    "state": "AZ",
+    "venue": "Tempe Beach Park",
+    "genres": [
+      "country"
+    ],
+    "website": "https://www.inningsfestival.com",
+    "camping": false,
+    "airports": [
+      "PHX",
+      "AZA"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-02-27",
+        "end": "2026-02-28",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.phoenixnewtimes.com/music/2026-extra-innings-festival-lineup-announced-40609181/",
+      "https://www.yahoo.com/entertainment/music/articles/extra-innings-festival-2026-bringing-190047662.html"
+    ],
+    "dataNotes": "Added beyond the requested list. Country-focused offshoot of Innings, with headliners Luke Bryan, Kane Brown, Dierks Bentley and Hardy. I could not find a price. The website is the parent Innings site; I could not confirm a dedicated Extra Innings URL."
+  },
+  {
+    "id": "floydfest",
+    "name": "FloydFest",
+    "city": "Floyd",
+    "state": "VA",
+    "venue": "FestivalPark (Check, VA)",
+    "genres": [
+      "jam",
+      "bluegrass",
+      "folk",
+      "rock"
+    ],
+    "website": "https://www.floydfest.com",
+    "camping": true,
+    "airports": [
+      "ROA",
+      "GSO"
+    ],
+    "ticket": {
+      "gaFrom": 325,
+      "note": "4-day GA, early bird",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-22",
+        "end": "2026-07-26",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://aftontickets.com/floydfest26daydream",
+      "https://www.wdbj7.com/2026/06/25/hometown-entertainment-floydfest-2026-daydream/",
+      "https://www.jambase.com/article/floydfest-2026-lineup"
+    ],
+    "dataNotes": "Ticket: 4-day GA (Thu-Sun), Early Bird tier on Afton Tickets (sold out); later tiers were $375 and $400; camping and parking sold separately; fee treatment not stated The 2026 theme was 'Daydream', with headliners Tedeschi Trucks Band, My Morning Jacket, Stephen Wilson Jr. and Lukas Nelson. The festival ran Wed-Sun (WDBJ), and the 4-day pass starts Thursday July 23. A 5-day (Wed-Sun) GA pass also existed, but I could not verify its price. FestivalPark's mailing address is Check, VA 24072, near the town of Floyd. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "governors-ball",
+    "name": "Governors Ball Music Festival",
+    "city": "New York",
+    "state": "NY",
+    "venue": "Flushing Meadows Corona Park",
+    "genres": [
+      "pop",
+      "hip-hop",
+      "indie",
+      "alternative"
+    ],
+    "website": "https://www.govball.com",
+    "camping": false,
+    "airports": [
+      "LGA",
+      "JFK",
+      "EWR"
+    ],
+    "ticket": {
+      "gaFrom": 319,
+      "note": "3-day GA, presale",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-05",
+        "end": "2026-06-07",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://v13.net/2026/01/governors-ball-reveals-2026-lineup/",
+      "https://stereogum.com/2484286/governors-ball-announces-2026-lineup/news",
+      "https://pix11.com/things-to-do/governors-ball-presale-offers-lowest-ticket-prices-for-one-hour-only/amp",
+      "https://governorsball.frontgatetickets.com/event/ey54mpf3rszy4xck"
+    ],
+    "dataNotes": "Ticket: 3-day GA, presale/launch tier (Jan 2026); official Front Gate page later showed $349 (and $361), and it is unclear whether those figures include fees Headliners: Lorde, Baby Keem, Stray Kids, Kali Uchis, A$AP Rocky, Jennie. 'Held' is based on the scheduled dates having passed with no cancellation found; post-event coverage was not checked. No official 2027 dates found; only fan/countdown sites estimate June 4-6, 2027."
+  },
+  {
+    "id": "hardly-strictly-bluegrass",
+    "name": "Hardly Strictly Bluegrass",
+    "city": "San Francisco",
+    "state": "CA",
+    "venue": "Golden Gate Park (Hellman Hollow, Lindley and Marx meadows)",
+    "genres": [
+      "bluegrass",
+      "folk",
+      "country"
+    ],
+    "website": "https://www.hardlystrictlybluegrass.com",
+    "camping": false,
+    "airports": [
+      "SFO",
+      "OAK",
+      "SJC"
+    ],
+    "ticket": {
+      "gaFrom": 0,
+      "note": "Free",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-10-02",
+        "end": "2026-10-04",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://abc7news.com/post/strictly-bluegrass-unveils-2026-lineup-free-golden-gate-park-music-festival-san-francisco/19558885/",
+      "https://sf.funcheap.com/hardly-strictly-bluegrass-2026-full-schedule-released/",
+      "https://music.mxdwn.com/2026/07/22/news/hardly-strictly-bluegrass-2026-lineup-announced-featuring-old-crow-medicine-show-my-morning-jacket-kathleen-edwards-more/"
+    ],
+    "dataNotes": "Ticket: Free admission; no tickets Free festival. The 2026 lineup included My Morning Jacket, Gillian Welch & David Rawlings and Old Crow Medicine Show. Alison Krauss & Union Station reportedly withdrew. A separate paid kickoff concert, 'An Evening Honoring Steve Earle', took place Oct 1 at The Masonic. Marked held because the dates have passed; I found no post-event coverage."
+  },
+  {
+    "id": "head-in-the-clouds",
+    "name": "Head In The Clouds",
+    "city": "Pasadena",
+    "state": "CA",
+    "venue": "Brookside at the Rose Bowl",
+    "genres": [
+      "pop",
+      "hip-hop",
+      "rnb"
+    ],
+    "website": "https://www.headinthecloudsfestival.com",
+    "camping": false,
+    "airports": [
+      "BUR",
+      "LAX",
+      "ONT"
+    ],
+    "ticket": {
+      "gaFrom": 179,
+      "note": "1-day GA, starting tier",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-08-08",
+        "end": "2026-08-08",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://joysauce.com/katseye-to-headline-head-in-the-clouds-2026/",
+      "https://www.melodicmag.com/news/las-head-in-the-clouds-festival-announces-katseye-xg-and-more-for-2026-lineup",
+      "https://www.timeout.com/los-angeles/music/head-in-the-clouds",
+      "https://news.pollstar.com/2026/07/30/head-in-the-clouds-partners-with-tiktok-live-for-festival-livestream/"
+    ],
+    "dataNotes": "Ticket: 1-day GA, starting tier (Time Out lists $179-$219) 88rising festival, a single day in 2026 (previously multi-day). KATSEYE headlined. The website URL is unverified because page fetches failed. Marked held because the date has passed."
+  },
+  {
+    "id": "high-water-festival",
+    "name": "High Water Festival",
+    "city": "North Charleston",
+    "state": "SC",
+    "venue": "Riverfront Park",
+    "genres": [
+      "indie",
+      "rock",
+      "folk"
+    ],
+    "website": "https://highwaterfest.com",
+    "camping": false,
+    "airports": [
+      "CHS"
+    ],
+    "ticket": {
+      "gaFrom": 272,
+      "note": "2-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-18",
+        "end": "2026-04-19",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://liveforlivemusic.com/news/high-water-festival-south-carolina-2026-artist-lineup/",
+      "https://relix.com/festivals/festival_news/detail/high-water-festival-unveils-2026-artist-lineup-alabama-shakes-my-morning-jacket-caamp-and-more/",
+      "https://highwaterfest.frontgatetickets.com/event/nwg8qc8o1phmhijm"
+    ],
+    "dataNotes": "Ticket: 2-day GA as shown on official Front Gate page; a presale 'lowest price' tier existed but its amount was not found; fee treatment not stated The festival is curated by Shovels & Rope and was headlined in 2026 by Alabama Shakes, My Morning Jacket, Caamp, Sheryl Crow and Maren Morris. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "hopscotch-music-festival",
+    "name": "Hopscotch Music Festival",
+    "city": "Raleigh",
+    "state": "NC",
+    "venue": "Downtown Raleigh venues & City Plaza",
+    "genres": [
+      "indie",
+      "rock",
+      "eclectic"
+    ],
+    "website": "https://hopscotchmusicfest.com",
+    "camping": false,
+    "airports": [
+      "RDU"
+    ],
+    "ticket": {
+      "gaFrom": 129,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-10",
+        "end": "2026-09-12",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.visitraleigh.com/plan-a-trip/visitraleigh-insider-blog/post/hopscotch-2026/",
+      "https://news.pollstar.com/2026/07/20/hopscotch-music-festival-unveils-2026-lineup/",
+      "https://hoodline.com/2026/07/hopscotch-2026-drops-and-downtown-raleigh-has-thoughts/"
+    ],
+    "dataNotes": "Ticket: 3-day GA price as of July 17, 2026 per The News & Observer (via Hoodline); Visit Raleigh listed $159 for 3-day GA in August; fee treatment not stated This was the 16th year: 90+ acts on 8 stages, headlined by King Princess, Cory Wong and Dexter and the Moonrocks. Single-day tickets returned at $79, and VIP was $299-$349. The $129 figure comes secondhand from AI-assisted Hoodline. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "iii-points",
+    "name": "III Points",
+    "city": "Miami",
+    "state": "FL",
+    "venue": "Mana Wynwood",
+    "genres": [
+      "electronic",
+      "hip-hop",
+      "indie"
+    ],
+    "website": "https://iiipoints.com",
+    "camping": false,
+    "airports": [
+      "MIA",
+      "FLL"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-10-16",
+        "end": "2026-10-17",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.miaminewtimes.com/music/iii-points-festival-reveals-2026-phase-one-lineup-40542759/",
+      "https://secretmiami.com/iii-points-wynwood-return-2026/",
+      "https://theconcertchronicles.com/2026/06/16/iii-points-2026-festival-preview/"
+    ],
+    "dataNotes": "This is the 13th edition. The lineup includes Underworld, Charlotte de Witte, Flying Lotus, Blood Orange, Adam Port and Tokischa. Miami New Times listed a $179-$375 ticket range without naming tiers, and the early 'Prophet Pass' price was not confirmed, so gaFrom is null. One resale site marks Oct 17 as sold out."
+  },
+  {
+    "id": "innings-festival",
+    "name": "Innings Festival",
+    "city": "Tempe",
+    "state": "AZ",
+    "venue": "Tempe Beach Park",
+    "genres": [
+      "rock",
+      "alternative",
+      "pop"
+    ],
+    "website": "https://www.inningsfestival.com",
+    "camping": false,
+    "airports": [
+      "PHX",
+      "AZA"
+    ],
+    "ticket": {
+      "gaFrom": 320,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-02-20",
+        "end": "2026-02-22",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://ktar.com/arizona-news/2026-innings-festival-tickets",
+      "https://www.phoenixnewtimes.com/music/2026-tempe-innings-festival-announces-three-day-lineup-22655630/",
+      "https://www.azfamily.com/2025/09/09/innings-festival-lineup-brings-punk-folk-rock-headliners-tempe/"
+    ],
+    "dataNotes": "Ticket: 3-day GA, starting price as reported Held at Tempe Beach Park and Tempe Arts Park. Headliners: Mumford & Sons, Twenty One Pilots, Blink-182. The $320 comes from secondary coverage and whether it includes fees is unverified. A country spin-off, Extra Innings, ran the next weekend and has its own entry. I did not search for 2027 dates because the search limit was reached."
+  },
+  {
+    "id": "just-like-heaven",
+    "name": "Just Like Heaven",
+    "city": "Pasadena",
+    "state": "CA",
+    "venue": "Brookside at the Rose Bowl",
+    "genres": [
+      "indie",
+      "alternative",
+      "rock"
+    ],
+    "website": "https://www.justlikeheavenfest.com",
+    "camping": false,
+    "airports": [
+      "BUR",
+      "LAX",
+      "ONT"
+    ],
+    "ticket": {
+      "gaFrom": 209,
+      "note": "1-day GA, tier 1",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-08-22",
+        "end": "2026-08-22",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.grimygoods.com/2026/03/16/just-like-heaven-moves-to-august-in-pasadena-headlined-by-the-strokes-tickets-start-at-209",
+      "https://www.nbclosangeles.com/entertainment/just-like-heaven-festival-2026-lineup-pasadena-rose-bowl/3861970/?amp=1",
+      "https://www.vice.com/en/via/just-like-heaven-2026-lineup-announced-the-strokes-lcd-soundsystem-to-headline/"
+    ],
+    "dataNotes": "Ticket: 1-day GA, Tier 1 (later tiers higher) Single-day festival, moved from its usual May date to August for 2026. Headliners: The Strokes, LCD Soundsystem. One resale listing (Stereoboard) shows Aug 12, but the news sources say Aug 22. Marked held because the date has passed; I found no post-event coverage."
+  },
+  {
+    "id": "kilby-block-party",
+    "name": "Kilby Block Party",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "venue": "Utah State Fairpark",
+    "genres": [
+      "indie",
+      "alternative",
+      "rock"
+    ],
+    "website": "https://www.kilbyblockparty.com",
+    "camping": false,
+    "airports": [
+      "SLC"
+    ],
+    "ticket": {
+      "gaFrom": 249,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-15",
+        "end": "2026-05-17",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.sltrib.com/artsliving/2025/10/21/when-is-kilby-block-party-2026",
+      "https://liveforlivemusic.com/news/kilby-block-party-2026-slc-artist-lineup-tickets/",
+      "https://floodmagazine.com/212460/lorde-turnstile-the-xx-kilby-block-party-2026",
+      "https://femmusic.com/2026/04/15/kilby-block-party-salt-lake-city-ut-may-15-17-2026/"
+    ],
+    "dataNotes": "Ticket: 3-day GA, starting price at the Nov 19, 2025 general on-sale Headliners: Lorde, The xx, Turnstile, Hayley Williams. One outlier source cites $175 early-bird passes, which conflicts with the $249 most outlets report. Tier 1 sold out quickly. 2027 dates (May 14-16) appear only on a third-party listing and are unconfirmed, so they are left null."
+  },
+  {
+    "id": "lightning-in-a-bottle",
+    "name": "Lightning in a Bottle",
+    "city": "Bakersfield",
+    "state": "CA",
+    "venue": "Buena Vista Aquatic Recreation Area",
+    "genres": [
+      "electronic",
+      "eclectic"
+    ],
+    "website": "https://lightninginabottle.org",
+    "camping": true,
+    "airports": [
+      "BFL",
+      "BUR",
+      "LAX"
+    ],
+    "ticket": {
+      "gaFrom": 449,
+      "note": "5-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-20",
+        "end": "2026-05-24",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://showbams.com/tag/lightning-in-a-bottle/"
+    ],
+    "dataNotes": "Ticket: 5-day GA (full festival); a 3-day GA was $399 The venue is a lake recreation area in Kern County, about 25 miles southwest of Bakersfield. Prices ($399 3-day, $449 5-day, on sale Nov 14, 2025) come from one secondary news site and were not checked against the official ticket page. Camping is part of the festival. Marked held because the dates have passed; I found no post-event coverage."
+  },
+  {
+    "id": "lollapalooza",
+    "name": "Lollapalooza",
+    "city": "Chicago",
+    "state": "IL",
+    "venue": "Grant Park",
+    "genres": [
+      "alternative",
+      "pop",
+      "hip-hop",
+      "electronic"
+    ],
+    "website": "https://www.lollapalooza.com",
+    "camping": false,
+    "airports": [
+      "ORD",
+      "MDW"
+    ],
+    "ticket": {
+      "gaFrom": 399,
+      "note": "4-day GA, tier 1",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-30",
+        "end": "2026-08-02",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://hollywoodlife.com/feature/when-is-lollapalooza-2026-dates-tickets-lineup-5543037/amp/",
+      "https://www.goal.com/en/news/lollapalooza-tickets-in-chicago/blt78929f802ae74c23",
+      "https://lollapalooza.frontgatetickets.com/event/e45ni23ufwe6o7hs",
+      "https://www.fox32chicago.com/news/lollapalooza-2026-lineup-everything-you-need-know",
+      "https://abc7chicago.com/live-updates/lollapalooza-2026-kick-off-thursday-grant-park-chicago-latest-lineup-tickets-schedule-bag-policy-live-updates/19597766/entry/19597859/"
+    ],
+    "dataNotes": "Ticket: 4-day GA, Tier 1 (presale opened Mar 19, 2026), before fees; the Front Gate listing later showed $439 (sold out/waitlist) The $399 Tier 1 price comes from secondary coverage (HollywoodLife, SeatGeek blog, Time Out). No official 2027 Chicago dates were found; pages giving Jul 29-Aug 1, 2027 are projections only."
+  },
+  {
+    "id": "lost-lands",
+    "name": "Lost Lands",
+    "city": "Thornville",
+    "state": "OH",
+    "venue": "Legend Valley",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://www.lostlandsfestival.com",
+    "camping": true,
+    "airports": [
+      "CMH"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-18",
+        "end": "2026-09-20",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://edmidentity.com/2026/09/12/lost-lands-2026-set-times-essentials/",
+      "https://edmmaniac.com/lost-lands-lineup-2026/",
+      "https://festivalpro.com/festival-management/5542/news/2026/5/13/Lost-Lands-Festival-United-States-Announces-Line-up-for-September-2026.html"
+    ],
+    "dataNotes": "This was Excision's 9th Lost Lands. The official site says 2026 GA and VIP rose $25 over 2025, but the exact 2026 GA figure was not found. Camping is sold separately, and early-entry add-ons (Wed/Thu) were offered. I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "m3f-fest",
+    "name": "M3F Fest",
+    "city": "Phoenix",
+    "state": "AZ",
+    "venue": "Steele Indian School Park",
+    "genres": [
+      "electronic",
+      "indie",
+      "pop"
+    ],
+    "website": "https://m3ffest.com",
+    "camping": false,
+    "airports": [
+      "PHX",
+      "AZA"
+    ],
+    "ticket": {
+      "gaFrom": 200,
+      "note": "2-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-06",
+        "end": "2026-03-07",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-03-05",
+        "end": "2027-03-06",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.phoenixnewtimes.com/music/m3f-2026-phoenix-festival-guide-ticket-info-set-times-40649638/",
+      "https://relix.com/news/detail/m3f-festival-returning-to-phoenix-in-2026-with-peggy-gou-mau-p-magdalena-bay-2hollis-polo-pan-and-more/",
+      "https://edmidentity.com/2026/08/05/m3f-2027-lineup/",
+      "https://edmmaniac.com/phoenixs-m3f-unveils-eclectic-2027-lineup/"
+    ],
+    "dataNotes": "Ticket: 2-day GA (1-day GA $130) 2026 lineup included Peggy Gou, Mau P and Magdalena Bay. 2027 is the 24th edition, set for Mar 5-6, 2027, and its lineup (Fisher, Joji, Sammy Virji, Disco Lines, Lola Young) was announced Aug 2026. Whether the 2026 prices include fees is unverified."
+  },
+  {
+    "id": "merlefest",
+    "name": "MerleFest",
+    "city": "Wilkesboro",
+    "state": "NC",
+    "venue": "Wilkes Community College",
+    "genres": [
+      "bluegrass",
+      "folk",
+      "country"
+    ],
+    "website": "https://merlefest.org",
+    "camping": null,
+    "airports": [
+      "GSO",
+      "CLT"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-23",
+        "end": "2026-04-26",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.jambase.com/article/merlefest-2026-lineup",
+      "https://merlefest.org/merlefest-shares-stage-schedules-for-2026-festival/",
+      "https://breakingandentering.net/2025/11/11/merlefest-2026-lineup-alison-krauss-blackberry-smoke-old-crow-medicine-show-more/"
+    ],
+    "dataNotes": "This was the 38th edition, headlined by Alison Krauss & Union Station, Old Crow Medicine Show, Blackberry Smoke and Charles Wesley Godwin. Price sources conflict: Breaking and Entering reported 4-day passes from $180 (early-bird through Jan 15), while the official purchase page showed $245 4-day GA ($265 at gate), and that may be 2027 pricing. gaFrom is left null for that reason. On-site camping was not verified. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "movement-music-festival",
+    "name": "Movement Music Festival",
+    "city": "Detroit",
+    "state": "MI",
+    "venue": "Hart Plaza",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://movementfestival.com",
+    "camping": false,
+    "airports": [
+      "DTW"
+    ],
+    "ticket": {
+      "gaFrom": 377.7,
+      "note": "3-day GA, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-23",
+        "end": "2026-05-25",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://electronicmidwest.com/news/detroits-movement-festival-announces-2026-lineup/",
+      "https://movementfestival.com/start-here",
+      "https://music.mxdwn.com/2026/01/31/news/movement-music-festival-announces-2026-lineup-featuring-sara-landry-carl-cox-and-dom-dolla/"
+    ],
+    "dataNotes": "Ticket: 3-day GA, the tier on sale at the Jan 2026 lineup announcement, INCLUDING taxes and fees (Electronic Midwest) The festival ran over Memorial Day weekend. Earlier tiers may have been cheaper. I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "musikfest",
+    "name": "Musikfest",
+    "city": "Bethlehem",
+    "state": "PA",
+    "venue": "Downtown Bethlehem & SteelStacks (multiple stages)",
+    "genres": [
+      "eclectic",
+      "rock",
+      "pop",
+      "country"
+    ],
+    "website": "https://www.musikfest.org",
+    "camping": false,
+    "airports": [
+      "ABE",
+      "EWR",
+      "PHL"
+    ],
+    "ticket": {
+      "gaFrom": 0,
+      "note": "Free on most stages; headliners ticketed",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-31",
+        "end": "2026-08-09",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.discoverlehighvalley.com/events/musikfest1/",
+      "https://festapp.io/festivals/musikfest/2026",
+      "https://buckscountyparent.com/event/musikfest-2026/2026-08-07/"
+    ],
+    "dataNotes": "Ticket: Free admission to most stages; headliner concerts (e.g., Wind Creek Steel Stage) are ticketed individually, so there is no festival pass Three listings give July 31 - Aug 9, 2026, a 10-day run. Wikipedia's general rule (it starts the first Friday in August) would point to Aug 7-16 instead. I could not confirm the dates on musikfest.org or ArtsQuest directly, so verify before publishing. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "jazz-fest",
+    "name": "New Orleans Jazz & Heritage Festival",
+    "city": "New Orleans",
+    "state": "LA",
+    "venue": "Fair Grounds Race Course",
+    "genres": [
+      "jazz",
+      "blues",
+      "rnb",
+      "eclectic"
+    ],
+    "website": "https://www.nojazzfest.com",
+    "camping": false,
+    "airports": [
+      "MSY"
+    ],
+    "ticket": {
+      "gaFrom": 399,
+      "note": "GA pass for one weekend, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-23",
+        "end": "2026-04-26",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2026,
+        "start": "2026-04-30",
+        "end": "2026-05-03",
+        "label": "Weekend 2"
+      },
+      {
+        "year": 2027,
+        "start": "2027-04-22",
+        "end": "2027-04-25",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2027,
+        "start": "2027-04-29",
+        "end": "2027-05-02",
+        "label": "Weekend 2"
+      }
+    ],
+    "sources": [
+      "https://www.jazzandheritage.org/2026-new-orleans-jazz-fest/",
+      "https://www.axios.com/local/new-orleans/2025/12/11/new-orleans-jazz-fest-2026-full-lineup",
+      "https://www.gratefulweb.com/articles/jazz-fest-2026-draws-475000-fans-2027-dates-announced/",
+      "https://www.neworleans.com/things-to-do/festivals/music-festivals/the-ultimate-jazz-fest-guide/"
+    ],
+    "dataNotes": "Ticket: GA weekend pass (one 4-day weekend), INCLUDING fees (Axios); no GA pass covering all 8 days was verified 2026 attendance was about 475,000. Single-day ticket prices were not verified, and Louisiana residents get discounts. The 2027 dates come from NewOrleans.com and Gratefulweb coverage of the announcement; confirm them on nojazzfest.com."
+  },
+  {
+    "id": "newport-folk-festival",
+    "name": "Newport Folk Festival",
+    "city": "Newport",
+    "state": "RI",
+    "venue": "Fort Adams State Park",
+    "genres": [
+      "folk",
+      "indie",
+      "rock"
+    ],
+    "website": "https://www.newportfolk.org",
+    "camping": false,
+    "airports": [
+      "PVD",
+      "BOS"
+    ],
+    "ticket": {
+      "gaFrom": 314.15,
+      "note": "3-day pass, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-24",
+        "end": "2026-07-26",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://relix.com/news/detail/newport-folk-festival-shares-2026-dates-and-ticket-information-for-67th-annual-event",
+      "https://whatsupnewp.com/2026/01/newport-folk-festival-tickets-go-on-sale-feb-4"
+    ],
+    "dataNotes": "Ticket: 3-day pass, ALL-IN price with fees included (DICE); no separate pre-fee price published This is the 67th edition. Tickets went on sale Feb 4, 2026 via DICE: 1-day $118.45, 2-day $226.60, 3-day $314.15, all with fees included. The festival typically sells out before its lineup is announced. 'Held' is based on the dates having passed; post-event coverage was not checked. 2027 dates were not checked because the search budget ran out."
+  },
+  {
+    "id": "newport-jazz-festival",
+    "name": "Newport Jazz Festival",
+    "city": "Newport",
+    "state": "RI",
+    "venue": "Fort Adams State Park",
+    "genres": [
+      "jazz",
+      "rnb",
+      "blues"
+    ],
+    "website": "https://www.newportjazz.org",
+    "camping": false,
+    "airports": [
+      "PVD",
+      "BOS"
+    ],
+    "ticket": {
+      "gaFrom": 278.1,
+      "note": "3-day GA promo, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-31",
+        "end": "2026-08-02",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://whatsupnewp.com/2026/04/newport-jazz-festival-unveils-2026-lineup/",
+      "https://whatsupnewp.com/2026/04/newport-jazz-festival-to-unveil-2026-lineup-tuesday-tickets-on-sale-same-day/",
+      "https://www.jambase.com/article/newport-jazz-festival-2026-lineup"
+    ],
+    "dataNotes": "Ticket: 3-day GA, limited 48-hour promotional price, ALL-IN with fees included; the regular 3-day GA price was $314.15 all-in This is the 72nd edition, headlined by Herbie Hancock, and Nate Smith's first year as artistic director. Other 2026 prices: student 3-day $189.52, single-day GA $117.42, all with fees included. A DICE bundle page showed $316.21 for the 3-day pass, which differs slightly. 'Held' is based on the dates having passed. 2027 dates were not checked."
+  },
+  {
+    "id": "north-coast-music-festival",
+    "name": "North Coast Music Festival",
+    "city": "Bridgeview",
+    "state": "IL",
+    "venue": "SeatGeek Stadium",
+    "genres": [
+      "electronic",
+      "hip-hop",
+      "jam"
+    ],
+    "website": "https://northcoastfestival.com",
+    "camping": null,
+    "airports": [
+      "MDW",
+      "ORD"
+    ],
+    "ticket": {
+      "gaFrom": 354.95,
+      "note": "3-day GA, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-04",
+        "end": "2026-09-06",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://electronicmidwest.com/news/chicagos-north-coast-music-festival-reveals-2026-lineup/",
+      "https://www.gratefulweb.com/articles/north-coast-music-festival-unveils-phase-two-lineup-for-its-16th-year/",
+      "https://www.bandsintown.com/f/207654"
+    ],
+    "dataNotes": "Ticket: 3-day GA as reported by Electronic Midwest, INCLUDING taxes and fees (pre-fee base not verified) This was the 16th edition, held in suburban Bridgeview about 30 minutes from downtown Chicago. On-site camping was not verified. I found no cancellation reports, but I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "okeechobee",
+    "name": "Okeechobee Music & Arts Festival",
+    "city": "Okeechobee",
+    "state": "FL",
+    "venue": "Sunshine Grove",
+    "genres": [
+      "eclectic",
+      "electronic",
+      "indie",
+      "hip-hop"
+    ],
+    "website": "https://www.okeechobeefest.com",
+    "camping": true,
+    "airports": [
+      "PBI",
+      "MCO",
+      "FLL"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-19",
+        "end": "2026-03-22",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.miaminewtimes.com/music/okeechobee-music-and-arts-festival-announces-2026-return-22831729",
+      "https://relix.com/?p=158105",
+      "https://www.okeechobeefest.com/tickets/military-tickets/",
+      "https://liveforlivemusic.com/news/okeechobee-festival-2026-lineup"
+    ],
+    "dataNotes": "The festival returned after skipping 2024 and 2025 for a 10-year reunion edition, and a Relix photo gallery dated Mar 24, 2026 confirms it took place. Headliners included The Lumineers, Fisher, GRiZ, LCD Soundsystem, Cage The Elephant and T-Pain. GA weekend tickets include walk-in camping, and car camping requires a separate pass. The standard GA price was not verified; the official military-offer page lists $374 + $78.20 fees after a $25 discount."
+  },
+  {
+    "id": "outside-lands",
+    "name": "Outside Lands Music and Arts Festival",
+    "city": "San Francisco",
+    "state": "CA",
+    "venue": "Golden Gate Park",
+    "genres": [
+      "eclectic",
+      "indie",
+      "rock",
+      "electronic"
+    ],
+    "website": "https://www.sfoutsidelands.com",
+    "camping": false,
+    "airports": [
+      "SFO",
+      "OAK",
+      "SJC"
+    ],
+    "ticket": {
+      "gaFrom": 445,
+      "note": "3-day GA presale",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://riffmagazine.com/news/outside-lands-presales-2026/",
+      "https://riffmagazine.com/festivals/charli-xcx-rufus-du-sol-strokes-2026-outside-lands-lineup/",
+      "https://www.edmtunes.com/2026/07/outside-lands-2026-golden-gate-park-preview/amp/"
+    ],
+    "dataNotes": "Ticket: 3-day GA presale, before fees (about $509 with fees) Headliners: Charli XCX, RUFUS DU SOL, The Strokes. The festival sold out. Riff Magazine's launch coverage gives $445 plus fees, and another outlet gives $445 + $64 fees. A later Riff piece quotes $509, which looks like the all-in price. 2027 dates (Aug 6-8) appear only on third-party listings and are unconfirmed, so they are left null."
+  },
+  {
+    "id": "pickathon",
+    "name": "Pickathon",
+    "city": "Happy Valley",
+    "state": "OR",
+    "venue": "Pendarvis Farm",
+    "genres": [
+      "indie",
+      "folk",
+      "eclectic"
+    ],
+    "website": "https://pickathon.com",
+    "camping": true,
+    "airports": [
+      "PDX"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-30",
+        "end": "2026-08-02",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://pickathon.com/2026/01/wednesday-is-the-new-thursday-early-bird-jan-7-10-am/",
+      "https://www.portlandmercury.com/pickathon/",
+      "https://www.wweek.com/music/2026/01/26/steve-earle-shaky-graves-to-headline-2026-pickathon"
+    ],
+    "dataNotes": "Headliners included Steve Earle, Built to Spill and Shakey Graves. I could not verify the price of the full 4-day pass. Reported figures conflict: early bird from $325, a 4-day pass with camping from $540, and a 3-day weekend pass at $345 through a Portland Mercury offer. The 3-day and 4-day passes include primitive camping. Marked held because the dates have passed."
+  },
+  {
+    "id": "portola-music-festival",
+    "name": "Portola Music Festival",
+    "city": "San Francisco",
+    "state": "CA",
+    "venue": "Pier 80",
+    "genres": [
+      "electronic",
+      "pop",
+      "indie"
+    ],
+    "website": "https://www.portolamusicfestival.com",
+    "camping": false,
+    "airports": [
+      "SFO",
+      "OAK",
+      "SJC"
+    ],
+    "ticket": {
+      "gaFrom": 380,
+      "note": "2-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-26",
+        "end": "2026-09-27",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.abc7news.com/post/portola-2026-lineup-dates-ticket-details-released-san-francisco-music-festival-pier-80/19189548/",
+      "https://riffmagazine.com/?p=128941",
+      "https://www.edmtunes.com/2026/05/portola-music-festival-announces-lineup-for-2026-edition/"
+    ],
+    "dataNotes": "Ticket: 2-day GA (1-day GA $250); may include fees Fifth edition. Headliners included Robyn, Dog Blood, Swedish House Mafia, Tiesto, Zara Larsson and Four Tet. Prices come from Riff Magazine and ABC7, and it is unclear whether they include fees. Marked held because the dates have passed; I found no post-event coverage."
+  },
+  {
+    "id": "riot-fest",
+    "name": "Riot Fest",
+    "city": "Chicago",
+    "state": "IL",
+    "venue": "Douglass Park",
+    "genres": [
+      "punk",
+      "rock",
+      "emo",
+      "alternative"
+    ],
+    "website": "https://riotfest.org",
+    "camping": false,
+    "airports": [
+      "MDW",
+      "ORD"
+    ],
+    "ticket": {
+      "gaFrom": 339.98,
+      "note": "3-day GA, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-18",
+        "end": "2026-09-20",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://news.pollstar.com/2026/05/29/tool-twenty-one-pilots-pierce-the-veil-top-riot-fest-2026/",
+      "https://concerts.consequence.net/articles/riot-fest-2026-lineup",
+      "https://www.choosechicago.com/event/series/riot-fest-2026/",
+      "https://www.fox32chicago.com/news/riot-fest-2026-chicago.amp"
+    ],
+    "dataNotes": "Ticket: 3-day GA; Pollstar says this price INCLUDES fees (pre-fee base not verified) This was the 21st edition. Earlier or cheaper tiers may have existed. Reports say the Chicago Park District agreement keeps the festival in Douglass Park through at least 2027, but no 2027 dates were found."
+  },
+  {
+    "id": "rock-fest",
+    "name": "Rock Fest",
+    "city": "Cadott",
+    "state": "WI",
+    "venue": null,
+    "genres": [
+      "rock",
+      "metal"
+    ],
+    "website": "https://www.rock-fest.com",
+    "camping": true,
+    "airports": [
+      "EAU",
+      "MSP"
+    ],
+    "ticket": {
+      "gaFrom": 139,
+      "note": "3-day GA; camping extra",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-16",
+        "end": "2026-07-18",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.wkow.com/news/rock-fest-2026-limp-bizkit-gojira-the-offspring-to-headline-in-cadott/article_bd863966-ed98-5f7b-8a9f-028eb6940d9a.html",
+      "https://www.weau.com/2026/01/14/rock-fest-announces-2026-lineup/",
+      "https://blabbermouth.net/news/limp-bizkit-the-offspring-and-gojira-to-headline-2026-rock-fest-in-cadott-wisconsin"
+    ],
+    "dataNotes": "Ticket: 3-day GA as reported at the Jan 2026 lineup announcement; camping sold separately (general camping $165); fee treatment not verified Headliners were Limp Bizkit, Gojira and The Offspring. A Wednesday, Jul 15 'Bonus Bash' was open only to 3-day ticket holders. The venue name is not given (coverage says the Cadott festival grounds). I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "rocky-mountain-folks-festival",
+    "name": "Rocky Mountain Folks Festival",
+    "city": "Lyons",
+    "state": "CO",
+    "venue": "Planet Bluegrass Ranch",
+    "genres": [
+      "folk"
+    ],
+    "website": "https://www.bluegrass.com/folks",
+    "camping": true,
+    "airports": [
+      "DEN"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-08-07",
+        "end": "2026-08-09",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.bluegrass.com/folks/tickets.html",
+      "https://www.gratefulweb.com/?p=657411",
+      "https://breakingandentering.net/2026/02/03/rocky-mountain-folks-festival-recruits-jesse-welles-ani-difranco-more-for-2026-lineup/"
+    ],
+    "dataNotes": "36th annual. Lineup included Jesse Welles, Ani DiFranco and Gillian Welch & David Rawlings. I could not get the official 2026 3-day pass price; the 2025 3-day GA was $300. The festival says it charges no fees. An early report gave Jul 31-Aug 2, but the official ticket page says Aug 7-9. Planet Bluegrass offers festival camping. Marked held because the dates have passed."
+  },
+  {
+    "id": "rolling-loud-orlando",
+    "name": "Rolling Loud Orlando",
+    "city": "Orlando",
+    "state": "FL",
+    "venue": "Camping World Stadium",
+    "genres": [
+      "hip-hop"
+    ],
+    "website": "https://www.rollingloud.com",
+    "camping": false,
+    "airports": [
+      "MCO",
+      "SFB"
+    ],
+    "ticket": {
+      "gaFrom": 249,
+      "note": "3-day GA presale, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-08",
+        "end": "2026-05-10",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-05-07",
+        "end": "2027-05-09",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://news.pollstar.com/2026/01/07/rolling-loud-heads-to-orlando-for-sole-2026-u-s-stop/",
+      "https://www.thefader.com/2026/01/07/rolling-loud-2026-orlando-announce-lineup",
+      "https://thesource.com/2026/05/11/rolling-loud-orlando-2026-ken-carson-young-thug-recap/",
+      "https://www.fox35orlando.com/news/rolling-loud-returns-orlando-2027"
+    ],
+    "dataNotes": "Ticket: 3-day GA presale price, ALL-IN with fees included; it later rose to $279 (VIP from $599) This was Rolling Loud's only US edition in 2026; it moved from Miami for the first time. Headliners were Playboi Carti, YoungBoy Never Broke Again and Don Toliver. FOX 35 reported it as sold out. The 2027 return to Camping World Stadium on May 7-9, 2027 has been announced."
+  },
+  {
+    "id": "roots-picnic",
+    "name": "Roots Picnic",
+    "city": "Philadelphia",
+    "state": "PA",
+    "venue": "Belmont Plateau, Fairmount Park",
+    "genres": [
+      "hip-hop",
+      "rnb"
+    ],
+    "website": "https://www.rootspicnic.com",
+    "camping": false,
+    "airports": [
+      "PHL"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-30",
+        "end": "2026-05-31",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.phillyvoice.com/roots-picnic-2026-lineup-jay-z-erykah-badu/",
+      "https://www.jambase.com/article/roots-picnic-2026-lineup",
+      "https://concerts.consequence.net/articles/roots-picnic-2026-lineup"
+    ],
+    "dataNotes": "This was the first year at Belmont Plateau; the festival was previously at the Mann Center. JAY-Z with The Roots headlined Saturday and Erykah Badu headlined Sunday. 2-day GA and VIP passes were sold, but I could not verify the 2026 price; the 2025 2-day GA was $250 per the Inquirer. A separate Roots Picnic London ran Aug 8-9, 2026. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "seahearnow-festival",
+    "name": "Sea.Hear.Now Festival",
+    "city": "Asbury Park",
+    "state": "NJ",
+    "venue": "North Beach & Bradley Park",
+    "genres": [
+      "rock",
+      "alternative",
+      "indie"
+    ],
+    "website": "https://www.seahearnowfestival.com",
+    "camping": false,
+    "airports": [
+      "EWR",
+      "JFK",
+      "LGA"
+    ],
+    "ticket": {
+      "gaFrom": 309,
+      "note": "2-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-19",
+        "end": "2026-09-20",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://thelocalgirl.com/jerseyshore/sea-hear-now-2026-asbury-park-nj/",
+      "https://www.brooklynvegan.com/sea-hear-now-2026-lineup-the-strokes-fontaines-d-c-the-war-on-drugs-pixies-kim-gordon-more/",
+      "https://www.jambase.com/article/sea-hear-now-2026-lineup"
+    ],
+    "dataNotes": "Ticket: 2-day GA as listed on official Front Gate page and in launch coverage; fee treatment not stated Headliners were Mumford & Sons (Sat) and The Strokes (Sun). 1-day GA was $180, and a 2-day GA bundle with a collectible credential was $319. 'Held' is based on the dates having passed; post-event coverage was not checked."
+  },
+  {
+    "id": "shaky-knees-music-festival",
+    "name": "Shaky Knees Music Festival",
+    "city": "Atlanta",
+    "state": "GA",
+    "venue": "Piedmont Park",
+    "genres": [
+      "rock",
+      "alternative",
+      "indie"
+    ],
+    "website": "https://www.shakykneesfestival.com",
+    "camping": false,
+    "airports": [
+      "ATL"
+    ],
+    "ticket": {
+      "gaFrom": 349,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-09-18",
+        "end": "2026-09-20",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://support.shakykneesfestival.com/hc/en-us/articles/4404885185428-Festival-dates-hours-and-location",
+      "https://shakyknees.frontgatetickets.com/event/ndfvxvt7c4wyq6ag",
+      "https://www.atlantanewsfirst.com/2026/02/24/twenty-one-pilots-strokes-gorillaz-more-shaky-knees-2026-lineup-released"
+    ],
+    "dataNotes": "Ticket: 3-day GA as listed on official Front Gate page ($359 also shown, likely a later tier or credential bundle); fee treatment not stated The festival is now held in September, not its earlier May slot. 2026 was its second year at Piedmont Park, headlined by The Strokes, Twenty One Pilots and Gorillaz. Children 8 and under get into GA free with a ticketed adult. 'Held' is based on the dates having passed; 2027 dates were not checked."
+  },
+  {
+    "id": "sick-new-world",
+    "name": "Sick New World",
+    "city": "Las Vegas",
+    "state": "NV",
+    "venue": "Las Vegas Festival Grounds",
+    "genres": [
+      "metal",
+      "alternative",
+      "rock"
+    ],
+    "website": "https://www.sicknewworldfest.com",
+    "camping": false,
+    "airports": [
+      "LAS"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-25",
+        "end": "2026-04-25",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://news.livenationentertainment.com/news/system-of-a-down-and-korn-mark-colossal-return-to-sick-new-world-las-vegas-2026",
+      "https://concerts.consequence.net/articles/sick-new-world-fest-vegas-texas-2026-lineups",
+      "https://www.moderndrummer.com/2026/05/sick-new-world-2026/"
+    ],
+    "dataNotes": "Single-day festival, returning after the 2025 edition was cancelled. Headliners included System of a Down and Korn, and Modern Drummer published a recap of the show. I could not find the official Las Vegas GA price: a third-party guide claims $339, and Texas GA started at $299. A separate Texas edition was set for Oct 24, 2026 at Texas Motor Speedway in Fort Worth, outside this region."
+  },
+  {
+    "id": "sonic-temple",
+    "name": "Sonic Temple Art + Music Festival",
+    "city": "Columbus",
+    "state": "OH",
+    "venue": "Historic Crew Stadium",
+    "genres": [
+      "rock",
+      "metal",
+      "alternative"
+    ],
+    "website": "https://sonictemplefestival.com",
+    "camping": false,
+    "airports": [
+      "CMH",
+      "LCK"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-14",
+        "end": "2026-05-17",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-05-13",
+        "end": "2027-05-16",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://cwcolumbus.com/entertainment/dates-announced-for-sonic-temple-hard-rock-metal-music-festival-columbus-ohio-2026",
+      "https://abc6onyourside.com/news/local/sonic-temple-sets-2027-dates-after-drawing-184000-fans-to-historic-crew-stadium-music-concert-festival-show-performance",
+      "https://loudwire.com/sonic-temple-2026-lineup/",
+      "https://www.aol.com/articles/sonic-temple-festival-sells-4-021307919.html"
+    ],
+    "dataNotes": "The 2026 festival sold out with 184,000 attendees, and its 4-day passes had sold out by Jan 2026. The official 4-day GA face price was not verified; one unofficial listing said 'from $361.99'. The 2027 dates were announced, and 2027 passes went on general sale Jun 29, 2026."
+  },
+  {
+    "id": "stagecoach",
+    "name": "Stagecoach: California's Country Music Festival",
+    "city": "Indio",
+    "state": "CA",
+    "venue": "Empire Polo Club",
+    "genres": [
+      "country"
+    ],
+    "website": "https://www.stagecoachfestival.com",
+    "camping": true,
+    "airports": [
+      "PSP",
+      "ONT",
+      "LAX"
+    ],
+    "ticket": {
+      "gaFrom": 549,
+      "note": "3-day GA, tier 1",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-24",
+        "end": "2026-04-26",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-04-23",
+        "end": "2027-04-25",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://consequence.net/2025/09/stagecoach-2026-how-to-get-tickets",
+      "https://bravo-www.soapcentral.com/music/how-get-tickets-stagecoach-festival-2026-prices-full-lineup-dates-location-need-know",
+      "https://news.pollstar.com/2026/06/16/2027-stagecoach-to-take-place-april-23-25/",
+      "https://music.mxdwn.com/2026/06/15/news/stagecoach-announces-2027-festival-dates/"
+    ],
+    "dataNotes": "Ticket: 3-day GA, Tier 1 (later tiers $579/$599/$619) 2026 headliners: Post Malone, Lainey Wilson, Cody Johnson. Under California all-in pricing rules the tier price may already include fees. 2027 lineup (Riley Green, Zach Top, Garth Brooks) was announced Sept 14, 2026, with 2027 GA from $599."
+  },
+  {
+    "id": "suenos-music-festival",
+    "name": "Sueños Music Festival",
+    "city": "Chicago",
+    "state": "IL",
+    "venue": "Grant Park",
+    "genres": [
+      "latin",
+      "hip-hop"
+    ],
+    "website": "https://suenosmusicfestival.com",
+    "camping": false,
+    "airports": [
+      "ORD",
+      "MDW"
+    ],
+    "ticket": {
+      "gaFrom": 329,
+      "note": "2-day GA, incl. fees",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-05-23",
+        "end": "2026-05-24",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.jambase.com/article/suenos-2026-lineup",
+      "https://vocalo.org/news/2026/02/10/fuerza-regida-j-balvin-kali-uchis-suenos-lineup-2026",
+      "https://www.rollingstone.com/music/music-latin/suenos-2026-lineup-j-balvin-kali-uchis-fuerza-regida-1235513724/",
+      "https://www.choosechicago.com/event/suenos-music-festival-2026/2026-05-23/"
+    ],
+    "dataNotes": "Ticket: 2-day GA at the Feb 12, 2026 general on-sale (Vocalo/WBEZ); the official site says its prices include fees The festival was 18+ and held over Memorial Day weekend. The official site also lists a 'Primer Acceso' tier at $259 and a Presale tier at $299, but I could not confirm whether those applied to 2026. Breaking and Entering reported $199, which is unverified. No 2027 dates were found."
+  },
+  {
+    "id": "summerfest",
+    "name": "Summerfest",
+    "city": "Milwaukee",
+    "state": "WI",
+    "venue": "Henry Maier Festival Park",
+    "genres": [
+      "eclectic",
+      "rock",
+      "pop",
+      "country"
+    ],
+    "website": "https://www.summerfest.com",
+    "camping": false,
+    "airports": [
+      "MKE",
+      "ORD"
+    ],
+    "ticket": {
+      "gaFrom": 58,
+      "note": "9-day pass, promo price",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-18",
+        "end": "2026-06-20",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2026,
+        "start": "2026-06-25",
+        "end": "2026-06-27",
+        "label": "Weekend 2"
+      },
+      {
+        "year": 2026,
+        "start": "2026-07-02",
+        "end": "2026-07-04",
+        "label": "Weekend 3"
+      },
+      {
+        "year": 2027,
+        "start": "2027-06-24",
+        "end": "2027-06-26",
+        "label": "Weekend 1"
+      },
+      {
+        "year": 2027,
+        "start": "2027-07-01",
+        "end": "2027-07-03",
+        "label": "Weekend 2"
+      },
+      {
+        "year": 2027,
+        "start": "2027-07-08",
+        "end": "2027-07-10",
+        "label": "Weekend 3"
+      }
+    ],
+    "sources": [
+      "https://www.fox6now.com/news/summerfest-attendance-2027-dates-announced",
+      "https://www.fox6now.com/news/new-dates-2027-summerfest-bastille-days",
+      "https://www.milwaukeemag.com/summerfest-attendance-drops-from-2025-moves-dates-back-a-week-for-2027/",
+      "https://www.fox6now.com/news/summerfest-2026-9-day-power-pass-available-nov-28-dec-1",
+      "https://urbanmilwaukee.com/pressrelease/milwaukees-summerfest-reveals-2026-lineup/"
+    ],
+    "dataNotes": "Ticket: 9-Day Power Pass promo price ($58), on sale Nov 28-Dec 1, 2025 and through Feb 25, 2026; regular price reportedly $130; fee treatment not verified Each weekend ran Thursday to Saturday. Attendance across the 3 weekends was 568,711 (Fox6). Single-day GA cost about $28-33. Amphitheater headliner shows are ticketed separately. Milwaukee World Festival announced the 2027 dates on Jul 9, 2026."
+  },
+  {
+    "id": "sxsw-music-festival",
+    "name": "SXSW Music Festival",
+    "city": "Austin",
+    "state": "TX",
+    "venue": "Multiple venues, downtown Austin",
+    "genres": [
+      "eclectic",
+      "indie",
+      "hip-hop",
+      "rock"
+    ],
+    "website": "https://www.sxsw.com",
+    "camping": false,
+    "airports": [
+      "AUS"
+    ],
+    "ticket": {
+      "gaFrom": 149,
+      "note": "7-night wristband; entry not guaranteed",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-12",
+        "end": "2026-03-18",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-03-15",
+        "end": "2027-03-21",
+        "label": "SXSW Music (overall SXSW incl. EDU runs Mar 13-21)"
+      }
+    ],
+    "sources": [
+      "https://www.fox7austin.com/news/sxsw-2026-festival-conference-changes",
+      "https://www.lawnstarter.com/blog/texas/austin-tx/sxsw-on-a-budget/",
+      "https://sxsw.com/wp-content/uploads/2026/04/SXSW-Announces-2027-Dates.pdf"
+    ],
+    "dataNotes": "Ticket: Music Festival Wristband for all 7 nights ($189 walk-up); entry not guaranteed (badges have priority); the Music Badge started around $550 In 2026 all SXSW tracks ran at the same time for the first time, and Music ran 7 nights. Sources conflict on the Music Badge presale price ($475 vs $550). A $99 wristband promo was reported but not confirmed. The 2027 dates come from SXSW's official release of Apr 16, 2026."
+  },
+  {
+    "id": "telluride-bluegrass-festival",
+    "name": "Telluride Bluegrass Festival",
+    "city": "Telluride",
+    "state": "CO",
+    "venue": "Telluride Town Park",
+    "genres": [
+      "bluegrass",
+      "folk",
+      "jam"
+    ],
+    "website": "https://www.bluegrass.com/telluride",
+    "camping": true,
+    "airports": [
+      "MTJ"
+    ],
+    "ticket": null,
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-06-18",
+        "end": "2026-06-21",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://breakingandentering.net/2026/01/13/telluride-bluegrass-festival-recruits-tedeschi-trucks-band-gregory-alan-isakov-larkin-poe-more-for-2026-lineup/",
+      "https://www.telluride.com/discover/blog/bluegrass-announces-2026-lineup/",
+      "https://www.lake.com/events/telluride-bluegrass-festival/",
+      "https://www.gratefulweb.com/?p=648872"
+    ],
+    "dataNotes": "53rd edition, produced by Planet Bluegrass. Lineup included Tedeschi Trucks Band, Gregory Alan Isakov and Larkin Poe. I could not verify the price of the 4-day pass: Breaking and Entering says from $295, Lake.com says '$300+', and PBS12 offers a $500 bundle with extras. Town Park camping and festival campgrounds are available. Marked held because the dates have passed."
+  },
+  {
+    "id": "tortuga-music-festival",
+    "name": "Tortuga Music Festival",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "venue": "Fort Lauderdale Beach Park",
+    "genres": [
+      "country",
+      "rock"
+    ],
+    "website": "https://www.tortugamusicfestival.com",
+    "camping": false,
+    "airports": [
+      "FLL",
+      "PBI",
+      "MIA"
+    ],
+    "ticket": {
+      "gaFrom": 335,
+      "note": "3-day GA, presale",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-10",
+        "end": "2026-04-12",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://holler.country/news/breaking/heres-all-the-pre-sale-info-you-need-for-tortuga-music-festival-2026-as-kenny-chesney-post-malone-and-more-are-announced/",
+      "https://countrynow.com/post-malone-riley-green-and-kenny-chesney-to-headline-tortuga-music-festival-2026/",
+      "https://www.tunesmag.com/2026/04/06/tortuga-music-festival-set-for-this-weekend-in-fort-lauderdale-beach/"
+    ],
+    "dataNotes": "Ticket: 3-day GA, Tier 1 alumni/Chase presale (Oct 2025); Tier 2 was $355; one outlet reported a general start of $399; fee treatment not stated This was the 13th edition, with headliners Post Malone, Riley Green and Kenny Chesney. Breaking and Entering reported April 3-5, but most sources, including Ticketmaster listings, give April 10-12. April 2-4, 2027 appears only on aggregator and resale listings and is not officially verified, so dates2027 is null. 'Held' is based on the dates having passed."
+  },
+  {
+    "id": "treefort-music-fest",
+    "name": "Treefort Music Fest",
+    "city": "Boise",
+    "state": "ID",
+    "venue": null,
+    "genres": [
+      "indie",
+      "eclectic",
+      "rock"
+    ],
+    "website": "https://treefortmusicfest.com",
+    "camping": false,
+    "airports": [
+      "BOI"
+    ],
+    "ticket": {
+      "gaFrom": 337.64,
+      "note": "5-day GA, launch price",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-25",
+        "end": "2026-03-29",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://www.idahopress.com/boiseweekly/arts_and_culture/treefort-2026-announces-dates-tickets-and-call-for-artists/article_d898e668-35ad-4ef3-88d4-99fd36c600cd.html",
+      "https://www.idahonews.com/news/local/treefort-music-fest-2026-offers-exclusive-locals-only-ticket-sale",
+      "https://www.kivitv.com/downtown-boise/your-guide-to-treefort-2026-music-comedy-art-and-more"
+    ],
+    "dataNotes": "Ticket: 5-day GA pass, launch price (Sept 2025); may include fees Held at many venues across downtown Boise, so venue is null. Boise Weekly gives $337.64 for 5-day GA at launch. A locals-only in-person sale offered 5-day passes at $240, and another report cites 'tiered all-in prices $223-$500+'. The base price before fees is not clear. One source lists Mar 24-28, but most sources give Mar 25-29."
+  },
+  {
+    "id": "two-step-inn",
+    "name": "Two Step Inn",
+    "city": "Georgetown",
+    "state": "TX",
+    "venue": "San Gabriel Park",
+    "genres": [
+      "country",
+      "rock"
+    ],
+    "website": "https://www.twostepinn.com",
+    "camping": null,
+    "airports": [
+      "AUS"
+    ],
+    "ticket": {
+      "gaFrom": 299,
+      "note": "2-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-04-18",
+        "end": "2026-04-19",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://communityimpact.com/georgetown/business/brooks-dunn-chris-stapleton-to-headline-2026-two-step-inn-festival-in-georgetown/",
+      "https://beta2.communityimpact.com/austin/georgetown/business/2025/09/22/2026-two-step-inn-presale-tickets-available-for-georgetown-residents",
+      "https://www.twostepinn.com/tickets"
+    ],
+    "dataNotes": "Ticket: 2-day GA, general-public launch price (Sept 2025); the Georgetown-resident presale was $289; fee treatment not verified This was the 4th edition, headlined by Brooks & Dunn and Chris Stapleton. A later Front Gate listing showed 2-day GA at $339 (waitlist). On-site camping was not verified. I did not check post-event coverage. No 2027 dates were found."
+  },
+  {
+    "id": "ultra-music-festival",
+    "name": "Ultra Music Festival",
+    "city": "Miami",
+    "state": "FL",
+    "venue": "Bayfront Park",
+    "genres": [
+      "electronic"
+    ],
+    "website": "https://ultramusicfestival.com",
+    "camping": false,
+    "airports": [
+      "MIA",
+      "FLL"
+    ],
+    "ticket": {
+      "gaFrom": 349.95,
+      "note": "3-day GA, tier 2",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-03-27",
+        "end": "2026-03-29",
+        "label": null
+      },
+      {
+        "year": 2027,
+        "start": "2027-03-26",
+        "end": "2027-03-28",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://edmidentity.com/2025/03/31/ultra-music-festival-2026-dates",
+      "https://edmidentity.com/2025/03/24/ultra-music-festival-2026-tickets",
+      "https://weraveyou.com/2026/04/ultra-miami-2027-dates-tickets/",
+      "https://djmag.com/news/ultra-music-festival-releases-limited-run-of-2027-tickets"
+    ],
+    "dataNotes": "Ticket: 3-day GA, Tier 2 waitlist price (March 2025), plus taxes and fees; a cheaper Tier 1 existed but its price was not found; a later Tier 3 was $479.15 A post-event release reported a sold-out 2026 with 165,000 attendees. GA is 18+ and there are no single-day tickets. The 2027 dates (Mar 26-28, Bayfront Park) were announced in April 2026; reported 2027 Tier 1 GA was $359.36 or $419.26 depending on the source."
+  },
+  {
+    "id": "under-the-big-sky",
+    "name": "Under the Big Sky",
+    "city": "Whitefish",
+    "state": "MT",
+    "venue": "Big Mountain Ranch",
+    "genres": [
+      "country",
+      "folk",
+      "rock"
+    ],
+    "website": "https://www.underthebigskyfest.com",
+    "camping": true,
+    "airports": [
+      "FCA",
+      "MSO",
+      "GEG"
+    ],
+    "ticket": {
+      "gaFrom": 380,
+      "note": "3-day GA",
+      "year": 2026
+    },
+    "status": "active",
+    "statusNote": null,
+    "editions": [
+      {
+        "year": 2026,
+        "start": "2026-07-17",
+        "end": "2026-07-19",
+        "label": null
+      }
+    ],
+    "sources": [
+      "https://events.leapevents.com/event/under-the-big-sky-festival-2026",
+      "https://www.kpax.com/out-and-about/under-the-big-sky-announces-2026-festival-lineup",
+      "https://savingcountrymusic.com/hot-damn-this-2026-under-the-big-sky-fest-lineup-is-stacked/"
+    ],
+    "dataNotes": "Ticket: 3-day GA before fees ($380 + $75.65 service fee = $455.65); sold out Headliners: Chris Stapleton, Zach Top, Cody Jinks. The price is from the ShowClix/Leap ticketing listing, which does not say when it was posted, so $380 may not be the earliest tier. On-site camping from prior years is assumed and was not re-verified for 2026. Marked held because the dates have passed."
+  }
+]

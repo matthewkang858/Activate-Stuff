@@ -1,0 +1,81 @@
+# Festival Planner
+
+Pick a US music festival by what the **whole trip** costs: tickets, getting there and a place to sleep.
+
+Enter your home airport, how many people are going and what you're into, and the site ranks upcoming
+festivals by estimated cost per person. Click **Get live prices** on a festival to swap the flight estimate
+for a real Skyscanner fare when an API key is configured.
+
+This started from [TMcMeans/The-Music-Festival-API](https://github.com/TMcMeans/The-Music-Festival-API)
+(2019 data, Express + Postgres). Its dates were strings like `4/12/19-4/21/19`, with no genres, prices or
+airport codes, so the festival list has been rebuilt for the 2026 season with a richer schema. The Postgres
+layer has been dropped in favor of a JSON file: a list this size doesn't need a database, and the app now
+runs anywhere Node does.
+
+## Run it
+
+```bash
+cd festival-planner
+npm install
+cp .env.example .env   # optional: add API keys
+npm start              # http://localhost:3000
+npm test
+```
+
+Requires Node 22.9+. The only runtime dependency is Express.
+
+## How costs are worked out
+
+| Piece | Without API keys | With API keys |
+| --- | --- | --- |
+| Tickets | Cheapest general-admission pass found for the 2026 edition (some include fees; the card says which). Festivals without a verified price use the median of the verified ones | Same |
+| Travel | Drive (fuel only) if you're within 300 miles; otherwise a distance-based round-trip fare | Skyscanner live fare (cheapest round trip) |
+| Hotel | Nightly rate by city size × festival-weekend demand; none if you live within 60 miles; stays capped at 5 nights | Hotel API (not wired up yet; see below) |
+
+All the estimate knobs live in `ASSUMPTIONS` in [`src/estimate.js`](src/estimate.js). They're heuristics
+for **comparing** festivals, not quotes, and the UI labels them as estimates.
+
+Festivals whose next dates haven't been announced are projected 52 weeks ahead from their last edition, which
+keeps a Friday–Sunday festival on Friday–Sunday. These show a **projected** badge and can be hidden.
+
+## API
+
+All endpoints are `GET` and return JSON.
+
+| Endpoint | What it returns |
+| --- | --- |
+| `/api/v1/festivals` | All festivals. Filters: `state=CA,NV`, `genre=rock,indie`, `from=2027-01-01`, `to=2027-06-30`, `q=coach`, `projected=0` |
+| `/api/v1/festivals/:id` | One festival, including source links for its data |
+| `/api/v1/states` | States with a festival count |
+| `/api/v1/states/:state/festivals` | Festivals in one state (`CA`) |
+| `/api/v1/plan?origin=JFK&travelers=2` | Festivals ranked by estimated cost per person. Takes the festival filters plus `rooms`, `arriveEarly=1`, `maxPerPerson` |
+| `/api/v1/festivals/:id/trip?origin=JFK&travelers=2` | Cost breakdown for one festival. `start=2027-04-16` picks other dates (e.g. Coachella weekend 2); `live=1` calls the price APIs |
+| `/api/v1/airports` | US airports with scheduled service (for the origin picker) |
+| `/api/v1/config` | Which live price providers are configured |
+
+`/plan` never calls paid APIs, so ranking every festival is instant. Live searches only happen when someone
+asks for one festival, are cached for 10 minutes and are rate-limited per visitor (both configurable in `.env`).
+
+## Data
+
+- [`data/festivals.json`](data/festivals.json): one entry per festival with ISO dates per edition, genres,
+  official site, cheapest GA price, camping, nearby airports (closest first) and source links. Edit this
+  file to add or update festivals; `npm test` validates it.
+- [`data/airports.json`](data/airports.json): US airports with scheduled airline service, built from
+  [OurAirports](https://ourairports.com/data/) (public domain) by `npm run build:airports -- <airports.json>`.
+
+### What's in the 2026 data
+
+65 festivals across 27 states, researched in October 2026 from news coverage (Pollstar, Billboard, local press) and
+festival announcements. Each entry links its sources, and `dataNotes` records anything uncertain, such as
+conflicting prices or a price that already includes fees.
+
+- **Confirmed 2027 dates** are included where announced (Coachella, Stagecoach, EDC Las Vegas, Jazz Fest,
+  Summerfest, Ultra, Boston Calling, SXSW, CMA Fest and a few more). Everything else is projected.
+- **Bonnaroo** is marked `hiatus`: organizers announced no 2027 edition, so it isn't projected forward.
+- **Left out** because they didn't run in 2026 and have no announced return date: Cruel World,
+  When We Were Young (returns Oct 2027), Punk Rock Bowling, Watershed, Float Fest, Voodoo, Adjacent, Something in
+  the Water, Firefly, ONE Musicfest, Music Midtown, Hangout (returns May 2027), SunFest and Dreamville.
+- **Not researched yet** (add them when you can verify dates): Forecastle, Louder Than Life, Bourbon & Beyond,
+  Railbird, Hinterland, Rocklahoma, Rock the Garden, Basilica Block Party and Boulevardia.
+- Prices are the cheapest tier found, which often sold out early, so treat them as a floor.

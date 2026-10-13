@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festival Planner</title>
+  <meta name="description" content="Pick a US music festival by what the whole trip costs: tickets, flights and hotels.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1>Festival Planner</h1>
+      <p class="tagline">Pick your next US music festival by what the <em>whole trip</em> costs: tickets, getting there and a place to sleep.</p>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <form id="filters" class="filters" autocomplete="off">
+      <fieldset>
+        <legend>Your trip</legend>
+        <label for="origin">Home airport</label>
+        <input id="origin" name="origin" list="airport-list" placeholder="e.g. JFK, ORD, LAX" required
+               pattern="[A-Za-z]{3}" maxlength="40" spellcheck="false">
+        <datalist id="airport-list"></datalist>
+
+        <div class="row">
+          <div>
+            <label for="travelers">People</label>
+            <input id="travelers" name="travelers" type="number" min="1" max="12" value="2">
+          </div>
+          <div>
+            <label for="rooms">Hotel rooms</label>
+            <input id="rooms" name="rooms" type="number" min="1" max="6" placeholder="auto">
+          </div>
+        </div>
+
+        <label class="check">
+          <input id="arriveEarly" name="arriveEarly" type="checkbox"> Arrive the night before
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What you're into</legend>
+        <div id="genres" class="chips" role="group" aria-label="Genres"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>When &amp; where</legend>
+        <div class="row">
+          <div>
+            <label for="from">From</label>
+            <input id="from" name="from" type="date">
+          </div>
+          <div>
+            <label for="to">To</label>
+            <input id="to" name="to" type="date">
+          </div>
+        </div>
+        <label for="state">State</label>
+        <select id="state" name="state"><option value="">Anywhere in the US</option></select>
+
+        <label for="maxPerPerson">Max per person</label>
+        <div class="budget">
+          <input id="maxPerPerson" name="maxPerPerson" type="range" min="200" max="4000" step="50" value="4000">
+          <output id="budgetOut" for="maxPerPerson">No limit</output>
+        </div>
+
+        <label class="check">
+          <input id="projected" name="projected" type="checkbox" checked>
+          Include festivals whose next dates aren't announced yet
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Sort by</legend>
+        <div class="segmented">
+          <label><input type="radio" name="sort" value="cost" checked> Cheapest</label>
+          <label><input type="radio" name="sort" value="date"> Soonest</label>
+        </div>
+      </fieldset>
+    </form>
+
+    <section class="results" aria-live="polite">
+      <div id="status" class="status">Loading festivals…</div>
+      <ol id="results" class="cards"></ol>
+    </section>
+  </main>
+
+  <footer class="wrap site-footer">
+    <p>
+      <strong>About the numbers.</strong> Unless a card says <span class="badge live">live</span>, travel and hotel
+      costs are rough estimates from distance and city size, meant for comparing festivals rather than budgeting
+      to the dollar. Ticket prices are each festival's cheapest general-admission pass before fees, from the
+      most recent edition. Dates marked <span class="badge projected">projected</span> assume the festival returns
+      on the same weekend next year.
+    </p>
+    <p>Airport data: <a href="https://ourairports.com/data/">OurAirports</a> (public domain).</p>
+  </footer>
+
+  <template id="card-template">
+    <li class="card">
+      <div class="card-head">
+        <div>
+          <h2 class="name"></h2>
+          <p class="where"></p>
+        </div>
+        <div class="price">
+          <span class="per-person"></span>
+          <span class="per-person-label">per person</span>
+        </div>
+      </div>
+      <p class="when"></p>
+      <ul class="genres"></ul>
+      <div class="bar" role="img"></div>
+      <dl class="breakdown"></dl>
+      <div class="card-actions">
+        <select class="edition" aria-label="Which dates" hidden></select>
+        <button type="button" class="live-btn" hidden>Get live prices</button>
+        <a class="site-link" target="_blank" rel="noopener">Festival site ↗</a>
+      </div>
+      <p class="card-note" hidden></p>
+    </li>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
