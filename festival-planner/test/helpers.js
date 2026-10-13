@@ -18,6 +18,8 @@ export const festivals = [
     genres: ['pop', 'indie'],
     website: 'https://example.com/desert',
     camping: true,
+    lat: 33.6823,
+    lon: -116.2378,
     airports: ['PSP', 'LAX'],
     ticket: { gaFrom: 500, note: '3-day GA', year: 2026 },
     status: 'active',

@@ -151,13 +151,22 @@ function tripParams(edition, live) {
 }
 
 function describeLive(live) {
-  const labels = { ok: 'live price', 'no-results': 'no live results; showing estimate', error: 'live search failed; showing estimate', 'not-configured': 'no API key configured', skipped: 'not needed' };
+  const labels = {
+    ok: 'live price',
+    'no-results': 'no live results; showing estimate',
+    error: 'live search failed; showing estimate',
+    'not-configured': 'no API key configured',
+    'no-location': 'festival location unknown; showing estimate',
+    'needs-confirmed-dates': 'needs confirmed dates; showing estimate',
+    skipped: 'not needed',
+  };
   return `Flights: ${labels[live.flights] ?? live.flights}. Hotels: ${labels[live.hotels] ?? live.hotels}.`;
 }
 
-// Live prices need real dates, so projected editions only get estimates.
+// Live flight prices need confirmed dates; hotel prices also work as a
+// preview for projected ones.
 function updateLiveButton(button, edition) {
-  button.hidden = !(config.live.flights || config.live.hotels) || edition.projected;
+  button.hidden = !((config.live.flights && !edition.projected) || config.live.hotels);
 }
 
 function renderCard(festival, trip) {
@@ -226,7 +235,8 @@ function renderCard(festival, trip) {
       try {
         const live = await api(`festivals/${festival.id}/trip`, tripParams(edition, true));
         renderTrip(card, live);
-        note.textContent = describeLive(live.live);
+        note.textContent = describeLive(live.live)
+          + (live.edition.projected ? ' Dates are projected, so treat live prices as a preview.' : '');
         if (live.travel.source === 'skyscanner') {
           note.insertAdjacentHTML('beforeend', ' <a href="https://www.skyscanner.net" target="_blank" rel="noopener">Powered by Skyscanner</a>');
         }

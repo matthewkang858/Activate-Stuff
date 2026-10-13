@@ -12,7 +12,8 @@
     "start": "node --env-file-if-exists=.env server.js",
     "dev": "node --watch --env-file-if-exists=.env server.js",
     "test": "node --test 'test/*.test.js'",
-    "build:airports": "node scripts/build-airports.js"
+    "build:airports": "node scripts/build-airports.js",
+    "check:liteapi": "node --env-file-if-exists=.env scripts/check-liteapi.js"
   },
   "dependencies": {
     "express": "^5.1.0"

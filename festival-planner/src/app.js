@@ -74,7 +74,8 @@ export function createApp({
       originAirport: originParam(query.origin),
       typicalTicketPrice: data.typicalTicketPrice,
       travelers,
-      rooms: intParam(query.rooms, { name: 'rooms', min: 1, max: 6, fallback: defaultRooms(travelers) }),
+      // Every room needs someone in it.
+      rooms: Math.min(travelers, intParam(query.rooms, { name: 'rooms', min: 1, max: 6, fallback: defaultRooms(travelers) })),
       arriveEarly: query.arriveEarly === '1' || query.arriveEarly === 'true',
     };
   }
@@ -182,21 +183,21 @@ export function createApp({
     const estimate = buildTrip({ festival, edition, festivalAirports: airports, ...options });
     const wantsLive = req.query.live === '1' || req.query.live === 'true';
     const live = { flights: flights ? 'skipped' : 'not-configured', hotels: hotels ? 'skipped' : 'not-configured' };
-    if (!wantsLive || (!flights && !hotels)) return res.json({ ...estimate, live });
-    // Live price APIs are for real trips; projected dates are only a guess.
-    if (edition.projected) {
-      return res.json({ ...estimate, live: { flights: 'needs-confirmed-dates', hotels: 'needs-confirmed-dates' } });
-    }
+    // Skyscanner live pricing is only for exact trips, and projected dates are
+    // a guess. Hotel rates for projected dates are shown as a preview.
+    const searchFlights = Boolean(flights) && !edition.projected;
+    if (flights && edition.projected) live.flights = 'needs-confirmed-dates';
+    if (!wantsLive || (!searchFlights && !hotels)) return res.json({ ...estimate, live });
 
     if (!allowLive(req.ip)) {
       return res.status(429).json({ error: 'Too many live price searches. Try again in a minute.' });
     }
 
-    const { checkIn, checkOut } = tripDates(edition, options);
+    const { checkIn, checkOut, nights } = tripDates(edition, options);
     const { originAirport, travelers, rooms } = options;
 
     const liveFlights = async () => {
-      if (!flights || estimate.travel.mode !== 'fly') return undefined;
+      if (!searchFlights || estimate.travel.mode !== 'fly') return undefined;
       const destination = estimate.travel.destination;
       const key = `f:${originAirport.iata}:${destination}:${checkIn}:${checkOut}:${travelers}`;
       try {
@@ -214,10 +215,14 @@ export function createApp({
 
     const liveHotels = async () => {
       if (!hotels || estimate.travel.local) return undefined;
+      if (festival.lat == null || festival.lon == null) {
+        live.hotels = 'no-location';
+        return undefined;
+      }
       const key = `h:${festival.id}:${checkIn}:${checkOut}:${travelers}:${rooms}`;
       try {
         const quote = await liveCache.getOrSet(key, () => hotels.cheapestStay({
-          city: festival.city, state: festival.state, checkIn, checkOut, adults: travelers, rooms,
+          lat: festival.lat, lon: festival.lon, checkIn, checkOut, nights, adults: travelers, rooms,
         }));
         live.hotels = quote ? 'ok' : 'no-results';
         return quote ?? undefined;

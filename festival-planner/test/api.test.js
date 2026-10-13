@@ -97,7 +97,7 @@ test('trip without live=1 is an estimate and skips the API', async () => {
   assert.equal(body.edition.label, 'Weekend 2');
   assert.equal(body.edition.projected, true);
   assert.equal(body.travel.source, 'estimate');
-  assert.deepEqual(body.live, { flights: 'skipped', hotels: 'not-configured' });
+  assert.deepEqual(body.live, { flights: 'needs-confirmed-dates', hotels: 'not-configured' });
   assert.equal(flightCalls.length, 0);
 });
 

@@ -3,8 +3,8 @@
 Pick a US music festival by what the **whole trip** costs: tickets, getting there and a place to sleep.
 
 Enter your home airport, how many people are going and what you're into, and the site ranks upcoming
-festivals by estimated cost per person. Click **Get live prices** on a festival to swap the flight estimate
-for a real Skyscanner fare when an API key is configured.
+festivals by estimated cost per person. Click **Get live prices** on a festival to swap the estimates for real
+hotel rates (LiteAPI) and flight fares (Skyscanner) when those API keys are configured.
 
 This started from [TMcMeans/The-Music-Festival-API](https://github.com/TMcMeans/The-Music-Festival-API)
 (2019 data, Express + Postgres). Its dates were strings like `4/12/19-4/21/19`, with no genres, prices or
@@ -30,7 +30,7 @@ Requires Node 22.9+. The only runtime dependency is Express.
 | --- | --- | --- |
 | Tickets | Cheapest general-admission pass found for the 2026 edition (some include fees; the card says which). Festivals without a verified price use the median of the verified ones | Same |
 | Travel | Drive (fuel only) if you're within 300 miles; otherwise a distance-based round-trip fare | Skyscanner live fare (cheapest round trip) |
-| Hotel | Nightly rate by city size × festival-weekend demand; none if you live within 60 miles; stays capped at 5 nights | Hotel API (not wired up yet; see below) |
+| Hotel | Nightly rate by city size × festival-weekend demand; none if you live within 60 miles; stays capped at 5 nights | LiteAPI: cheapest room within 15 km of the venue (40 km if nothing's free), including resort/facility fees paid at the hotel |
 
 All the estimate knobs live in `ASSUMPTIONS` in [`src/estimate.js`](src/estimate.js). They're heuristics
 for **comparing** festivals, not quotes, and the UI labels them as estimates.
@@ -40,7 +40,23 @@ keeps a Friday–Sunday festival on Friday–Sunday. These show a **projected** 
 
 ## Live prices and API keys
 
-**Skyscanner (flights) is wired up but hard to get.** Keys are only issued to approved commercial partners:
+### Hotels: LiteAPI
+
+1. Sign up at [dashboard.liteapi.travel](https://dashboard.liteapi.travel/register) and copy the sandbox key
+   (it starts with `sand_`).
+2. Put it in `.env` as `LITEAPI_API_KEY=...` and restart.
+3. Run `npm run check:liteapi` once. It prices one hotel for 1 night and for 3 nights to confirm that LiteAPI's
+   offer price covers the whole stay, which is what the app assumes. LiteAPI's docs don't say either way.
+
+How it searches ([`src/providers/liteapi.js`](src/providers/liteapi.js)): one `POST /v3.0/hotels/rates` around
+the festival's coordinates, splitting your group across the rooms you asked for, cheapest rate per hotel. If
+nothing comes back within 15 km it tries 40 km, then falls back to the estimate. Sandbox keys may return test
+prices; the card says "Sandbox test price" when they do. If they turn out to be test data, switch to a production key.
+Hotel prices also work for projected dates, as a preview.
+
+### Flights: Skyscanner
+
+**Skyscanner is wired up but hard to get.** Keys are only issued to approved commercial partners:
 established businesses with roughly 100k+ monthly users. Students, individuals, early start-ups and low-traffic
 sites are explicitly excluded ([acceptance criteria](https://skyscannerpartnersupport.zendesk.com/hc/en-us/articles/10881149122717-What-is-the-acceptance-criteria-for-the-Travel-API),
 [apply](https://www.partners.skyscanner.net/product/travel-api)). If you do get a key, the integration follows
@@ -52,13 +68,14 @@ their [usage guidelines](https://developers.skyscanner.net/docs/getting-started/
 - Not yet checked against a real response: whether the price is per person or for the whole party. The code assumes the whole party.
 - For ranking many festivals at once, their separate Flights Indicative Prices API (cached prices) is the right tool, not Live Prices.
 
-**Self-serve alternatives**, if Skyscanner says no. None are wired up yet; each would be a new file in `src/providers/`
-exposing the same `roundTrip()` / `cheapestStay()` shape that `src/app.js` already calls:
+### Other options
+
+Not wired up; each would be a new file in `src/providers/` exposing the same `roundTrip()` / `cheapestStay()`
+shape that `src/app.js` already calls:
 
 | Need | Option | Notes |
 | --- | --- | --- |
-| Hotels | [LiteAPI](https://github.com/liteapi-travel/nodejs-sdk) | Free sandbox key; `POST /v3.0/hotels/rates` by lat/lng + dates. Needs festival coordinates added to the data |
-| Hotels or flights | SerpApi (Google Hotels / Google Flights) | Paid per search, simple to call; good for estimates |
+| Flights (or hotels) | SerpApi (Google Flights / Google Hotels) | Paid per search, simple to call; good for estimates |
 | Flights | Duffel | Real bookable fares, self-serve; built for booking, so heavy search-only use may cost extra |
 | Ticket prices | Ticketmaster Discovery API | Free key; `priceRanges` is often missing for festivals, so keep the hand-entered prices as a fallback |
 
